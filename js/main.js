@@ -3,19 +3,43 @@
 
     $(document).on('ready', function () {
 
-        var split = Split(['#slpit-one', '#slpit-two'], {
-            sizes: [50, 50],
-            minSize: 20,
-            onDrag: function () {
-                $(".split-item").getNiceScroll().resize();
-            },
 
-        });
+
+
+
+        if (window.innerWidth <= 768) {
+            var split = Split(['#slpit-one', '#slpit-two'], {
+                sizes: [50, 50],
+                minSize: 20,
+                direction: 'vertical',
+                onDrag: function () {
+                    $(".split-item").getNiceScroll().resize();
+                },
+
+
+
+            });
+
+        } else {
+            var split = Split(['#slpit-one', '#slpit-two'], {
+                sizes: [50, 50],
+                minSize: 20,
+                onDrag: function () {
+                    $(".split-item").getNiceScroll().resize();
+                },
+
+
+
+            });
+
+        }
 
         "use strict";
         /**Preload**/
         $('#page-loader').delay(800).fadeOut(600, function () {
+
             $('body').fadeIn();
+
         });
         /**Tooltip**/
         $(function () {
@@ -28,7 +52,39 @@
             autohidemode: 'false'
         });
 
+        $(window).bind('resize', function () {
+            var width = window.innerWidth;
+            var check = false;
+            if (width <= 768) {
+                check = true;
 
+            } else {
+                check = false;
+
+            }
+            if (check) {
+                split.destroy();
+                split = Split(['#slpit-one', '#slpit-two'], {
+                    sizes: [50, 50],
+                    minSize: 20,
+                    direction: 'vertical',
+                    onDrag: function () {
+                        $(".split-item").getNiceScroll().resize();
+                    },
+                });
+
+            } else {
+                split.destroy();
+                split = Split(['#slpit-one', '#slpit-two'], {
+                    sizes: [50, 50],
+                    minSize: 20,
+                    onDrag: function () {
+                        $(".split-item").getNiceScroll().resize();
+                    },
+                });
+
+            }
+        }).trigger('resize');
 
 
 

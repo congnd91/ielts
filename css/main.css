@@ -481,7 +481,10 @@ iframe {
   background: url("../images/vsizegrip.png") no-repeat center center;
   background-color: #898989; }
 
-.split.split-horizontal,
+.gutter-vertical {
+  clear: both;
+  cursor: ns-resize; }
+
 .gutter.gutter-horizontal {
   height: 100%;
   float: left; }
@@ -503,7 +506,9 @@ iframe {
 
 .split-item {
   overflow-y: auto;
-  position: relative; }
+  position: relative;
+  float: left;
+  height: 100%; }
 
 .nicescroll-rails {
   opacity: 1 !important;

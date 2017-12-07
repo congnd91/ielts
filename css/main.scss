@@ -637,9 +637,19 @@ iframe {
 }
 
 .split.split-horizontal,
+.gutter {
+    //clear: both;
+}
+
+.gutter-vertical {
+    clear: both;
+    cursor: ns-resize;
+}
+
 .gutter.gutter-horizontal {
     height: 100%;
     float: left;
+
 }
 
 
@@ -664,6 +674,9 @@ iframe {
 .split-item {
     overflow-y: auto;
     position: relative;
+    float: left;
+    height: 100%;
+
 
 }
 
