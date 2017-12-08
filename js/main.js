@@ -4,7 +4,35 @@
     $(document).on('ready', function () {
 
 
+        /**Preload**/
+        $('#page-loader').delay(800).fadeOut(600, function () {
 
+            $('body').fadeIn();
+
+        });
+
+        $('.nav-icon').click(function () {
+            $(this).toggleClass('open');
+            $('body').toggleClass("open-menu");
+        });
+        /**Menu**/
+
+
+        $('.menu-res li.has-child').on('click', function (event) {
+            event.stopPropagation();
+            var submenu = $(this).find(" > ul");
+            if ($(submenu).is(":visible")) {
+                $(submenu).slideUp();
+                $(this).removeClass("open-submenu-active");
+            } else {
+                $(submenu).slideDown();
+                $(this).addClass("open-submenu-active");
+            }
+        });
+
+        $('.menu-res li.menu-item-has-children > a').on('click', function () {
+            //  return false;
+        });
 
 
         if (window.innerWidth <= 768) {
@@ -35,16 +63,8 @@
         }
 
         "use strict";
-        /**Preload**/
-        $('#page-loader').delay(800).fadeOut(600, function () {
 
-            $('body').fadeIn();
 
-        });
-        /**Tooltip**/
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        })
 
 
         //split
@@ -94,29 +114,7 @@
                 scrollTop: 0
             }, 0);
         }
-        /**Menu**/
-        $('.menu-icon-mobile').on('click', function () {
-            $('body').toggleClass("open-menu-mobile");
-        });
-        $('.menu-icon').on('click', function () {
-            $('body').toggleClass("open-menu");
-            setTimeout(scrollToTop, 0);
-        });
-        $('.menu-res li.menu-item-has-children').on('click', function (event) {
-            event.stopPropagation();
-            var submenu = $(this).find(" > ul");
-            if ($(submenu).is(":visible")) {
-                $(submenu).slideUp();
-                $(this).removeClass("open-submenu-active");
-            } else {
-                $(submenu).slideDown();
-                $(this).addClass("open-submenu-active");
-            }
-        });
 
-        $('.menu-res li.menu-item-has-children > a').on('click', function () {
-            //  return false;
-        });
 
 
         /** Back To Top**/

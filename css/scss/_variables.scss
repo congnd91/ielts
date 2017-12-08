@@ -45,7 +45,7 @@ $error-color:#f44336;
 
 
 $text-color: #282828;
-$text-color-second: #888888;
+$text-color-second: #787878;
 $text-color-thrid:#7e90a2;
 
 
@@ -59,6 +59,9 @@ $base-color:#3c6996;
 $active-color: #284664;
 $active-color-second: #32b3c7;
 $active-color-thrid: #268695;
+$active-color-for: #536b83;
+$active-color-five: #32b3c7;
+
 $hover-color:lighten($active-color, 5%);
 $border-color: #898989;
 $border-color-second:#b2b0b0;
@@ -78,17 +81,17 @@ $padding-section-mobile:30px;
 
 //== Typography
 $font-size-large:60px;
-$font-size-h1: 35px;
-$font-size-h2: 30px;
-$font-size-h3: 25px;
-$font-size-h4: 20px;
-$font-size-h5: 18px;
-$font-size-h6: 15px;
+$font-size-h1: 32px;
+$font-size-h2: 26px;
+$font-size-h3: 20px;
+$font-size-h4: 18px;
+$font-size-h5: 16px;
+$font-size-h6: 14px;
 
-$font-size-base: 22px;
+$font-size-base: 16px;
 $font-size-xs: 14px;
-$font-size-sm: 18px;
-$font-size-lg: 28px;
+$font-size-sm: 14px;
+$font-size-lg: 18px;
 $font-size-heading: 35px;
 
 // NNTH: Font Weight Variants
