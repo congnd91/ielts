@@ -1,32 +1,44 @@
 //
 // Variables
-// --------------------------------------------------
-//== Colors
-//== Gray Levels
-$gray: #95a5a6;
-
-$gray-dark: #7f8c8d;
-$gray-darker: #34495e;
-$gray-darkest: #2c3e50;
-
-$gray-light: #bdc3c7;
-$gray-lighter: #ecf0f1;
-$gray-lightest: #f3f5f5;
-
-
-
+// -------------------------------------------------
 $black: #000;
 $white: #fff;
 $blue: #2b85c1;
 $blue-dark: darken($blue, 15%);
 $green: #327846;
 $green-dark: #265a35;
+$green-light: #327846;
 $cyan: #3498db;
 $red: #c0392b;
 $yellow: #f1c40f;
 $orange: #f9a95a;
 $pink: #c76478;
 $purple: #8e44ad;
+
+
+$text-color: #282828;
+$text-color-second: #787878;
+$text-color-thrid:#7e90a2;
+$text-color-for: #888888;
+$button-color:#6d53a3;
+$button-color-hover:#3599cb;
+$button-color-disable:#999999;
+$caption-color:#efe8d0;
+$caption-color-second:#cdb683;
+$base-color:#3c6996;
+$active-color: #284664;
+$active-color-second: #32b3c7;
+$active-color-thrid: #268695;
+$active-color-for: #536b83;
+$active-color-five: #32b3c7;
+$hover-color:lighten($active-color, 5%);
+$border-color: #898989;
+$border-color-second:#b2b0b0;
+$border-radius:2px;
+$box-color:#f5f5f5;
+$icon-bg:#d4dae0;
+$button-bg:#e9ecef;
+
 
 // Other Brand colors
 // -------------------------
@@ -39,44 +51,6 @@ $brand-pinterest: #cb2027;
 $brand-instagram: #fb3958;
 $brand-rss: #f26522;
 
-$success-color:#28b260;
-$error-color:#f44336;
-
-
-
-$text-color: #282828;
-$text-color-second: #787878;
-$text-color-thrid:#7e90a2;
-
-
-$button-color:#6d53a3;
-$button-color-hover:#3599cb;
-$button-color-disable:#999999;
-
-$caption-color:#efe8d0;
-$caption-color-second:#cdb683;
-$base-color:#3c6996;
-$active-color: #284664;
-$active-color-second: #32b3c7;
-$active-color-thrid: #268695;
-$active-color-for: #536b83;
-$active-color-five: #32b3c7;
-
-$hover-color:lighten($active-color, 5%);
-$border-color: #898989;
-$border-color-second:#b2b0b0;
-$border-radius:2px;
-$box-color:#f5f5f5;
-
-
-$icon-bg:#d4dae0;
-$button-bg:#e9ecef;
-
-
-
-//== Padding
-$padding-section:60px;
-$padding-section-mobile:30px;
 
 
 //== Typography
@@ -89,16 +63,10 @@ $font-size-h5: 16px;
 $font-size-h6: 14px;
 
 $font-size-base: 16px;
-$font-size-xs: 14px;
+$font-size-xs: 12px;
 $font-size-sm: 14px;
 $font-size-lg: 18px;
 $font-size-heading: 35px;
-
-// NNTH: Font Weight Variants
-// --------------------------------
-$font-weight-light: 300;
-$font-weight-base: 400;
-$font-weight-bold: 700;
 
 
 h1,
@@ -134,16 +102,8 @@ h6,
 
 // Typography
 // -------------------------
-//$font-family:'Open Sans',sans-serif;
 $font-family: 'Nunito',
 sans-serif;
 $font-family-base: $font-family;
 $font-family-heading:'Montserrat',
 sans-serif;
-
-
-//$font-family-meta:'Lora', ;
-$headings-margin-bottom:10px;
-$section-margin-bottom:20px;
-
-//Custom font
