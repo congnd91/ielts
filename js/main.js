@@ -92,9 +92,14 @@
         });
 
         $('.show-test-menu').click(function () {
-
             $('.reading-header').toggleClass("show-test");
-            $(this).html(" <em></em>  Hide Test Info");
+
+
+            if ($('.reading-header').hasClass("show-test")) {
+                $(this).html(" <em></em>  Hide Test Info");
+            } else {
+                $(this).html(" <em></em>  Show Test Info");
+            }
         });
 
 
