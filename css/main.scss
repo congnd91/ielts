@@ -40,53 +40,42 @@ body {
     line-height: 1.5;
     @include transition();
     color: $text-color;
-
     &.background {
         background-image: url(../images/bg.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
-
         .topbar {
             background-color: transparent;
             padding-right: 5px;
         }
-
         .header {}
     }
-
     &.background-box {
         background-image: url(../images/bg1.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
-
         .topbar {
             background-color: transparent;
             padding-right: 5px;
         }
-
         .header {}
-
         .box {
             background-color: #fff;
             padding: 0px 15px 15px 15px;
         }
-
         .box-caption {
             margin: 0px -15px 0px -15px;
         }
-
         .tab-caption {
             margin: 0px -15px 15px -15px;
         }
-
         .owl-category-wrap {
             margin: -15px -15px -15px -15px;
         }
-
         .box-special {
             margin: -15px -15px -15px -15px;
         }
@@ -163,18 +152,15 @@ iframe {
     text-transform: uppercase;
     border: none;
     @include transition();
-
     &:hover {
         background-color: $active-color;
         outline: none;
         color: #fff;
     }
-
     &.active {
         background-color: $active-color;
         outline: none;
         color: #fff;
-
         &:hover {
             opacity: 0.8;
         }
@@ -184,7 +170,6 @@ iframe {
 .row-fix {
     margin-left: -10px;
     margin-right: -10px;
-
     .col-fix {
         padding-left: 10px;
         padding-right: 10px;
@@ -211,19 +196,15 @@ iframe {
     0% {
         opacity: 0.7;
     }
-
     25% {
         opacity: 0.9;
     }
-
     50% {
         opacity: 1;
     }
-
     75% {
         opacity: 0.9;
     }
-
     100% {
         opacity: 0.7;
     }
@@ -240,45 +221,26 @@ iframe {
 /*==========Header=========*/
 
 .header {
-
-
     position: relative;
     z-index: 999;
     text-align: center;
     padding: 20px 0px;
-
     background-color: #fff;
     @media screen and (max-width: 991px) {
-
         padding: 5px 0px;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-
     }
-
-
-
-
     .logo {
-
         float: left;
         img {
-
             width: 190px;
         }
-
         @media screen and (max-width:991px) {
-
             img {
                 width: 100px;
             }
-
         }
-
     }
-
-
-
-
 }
 
 .header-banner {
@@ -293,8 +255,6 @@ iframe {
 .nav-icon {
     width: 35px;
     height: 40px;
-
-
     position: relative;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -307,7 +267,6 @@ iframe {
     cursor: pointer;
     float: right;
     cursor: pointer;
-
 }
 
 .nav-icon span {
@@ -329,12 +288,10 @@ iframe {
 
 .nav-icon span:nth-child(even) {
     left: 50%;
-
 }
 
 .nav-icon span:nth-child(odd) {
     left: 0px;
-
 }
 
 .nav-icon span:nth-child(1),
@@ -398,13 +355,11 @@ iframe {
     top: 24px;
 }
 
-
 /*==========Menu=========*/
 
 @media screen and (max-width:991px) {
     .open-menu {
         overflow: hidden;
-
         .header {
             background-color: $active-color;
             box-shadow: none;
@@ -415,24 +370,19 @@ iframe {
         .menu-res {
             transform: translateY(0px);
         }
-
         .page {
             transform: translateY(100%);
-
         }
-
         .menu-icon {
             i {
                 color: $active-color;
                 font-size: 24px;
-
                 &:before {
                     content: "\f2d7";
                 }
             }
         }
     }
-
     .menu-res {
         width: 100%;
         background-color: $active-color;
@@ -444,46 +394,34 @@ iframe {
         left: 0px;
         @include transition();
         right: 0px;
-
         transform: translateY(-130%);
     }
-
     .page {
-
         @include transition();
     }
-
     .menu-res-inner {
         padding: 10px 0px 0px 0px;
-
         ul {
             padding: 0px;
             list-style: none;
-
             > li {
                 position: relative;
-
                 .fa-home {
                     margin: 0px 5px 0px 0px;
                 }
-
                 a {
                     font-size: 13px;
-
                     color: #fff;
                     display: block;
                     line-height: 45px;
                     font-weight: 800;
                     @include transition();
                     padding: 0px 15px;
-
                     &:hover {
                         color: #fff;
-
                         background-color: #536B83;
                     }
                 }
-
                 &.has-child {
                     &:before {
                         display: block;
@@ -497,27 +435,18 @@ iframe {
                         right: 15px;
                     }
                 }
-
                 &.open-submenu-active {
-
                     > a {
                         background-color: #536B83;
                     }
-
-
                 }
-
                 > ul {
-
                     display: none;
-
                     li {
                         border: none;
-
                         &:last-child {
                             border: none;
                         }
-
                         a {
                             display: block;
                             line-height: 45px;
@@ -526,16 +455,11 @@ iframe {
                             padding: 0px 20px 0px 25px;
                             font-weight: 800;
                             @include transition();
-
-
-
                             &:hover {
                                 color: #fff;
                             }
                         }
-
                         > ul {
-
                             li a {
                                 padding: 0px 20px 0px 35px;
                                 line-height: 45px;
@@ -554,26 +478,19 @@ iframe {
     height: 50px;
     background-color: $active-color;
     position: relative;
-
-
     .menu-main {
         margin: 0px;
         padding: 0px;
-
         li {
             display: inline-block;
-
             padding: 0px 0px 0px 0px;
             margin: 0px 5px 0px 0px;
             float: left;
-
             &.active {
                 > a {
                     color: $active-color;
                 }
             }
-
-
             > a {
                 display: block;
                 float: left;
@@ -590,24 +507,16 @@ iframe {
                     background-size: 14px 14px;
                     width: 14px;
                     height: 14px;
-
-
                 }
-
                 @media screen and (max-width:1199px) {
                     padding: 0px 5px;
                     font-size: $font-size-sm;
                 }
-
-
             }
-
             &:first-child {}
-
             &:hover {
                 > a {
                     background-color: $active-color-for;
-
                     span {
                         -moz-transform: rotate(180deg);
                         -webkit-transform: rotate(180deg);
@@ -615,7 +524,6 @@ iframe {
                         -ms-transform: rotate(180deg);
                         transform: rotate(180deg);
                     }
-
                     ul {
                         li {
                             a {
@@ -624,27 +532,20 @@ iframe {
                         }
                     }
                 }
-
                 > .sub-menu {
                     opacity: 1;
                     visibility: visible;
                     margin-top: 0px;
                 }
-
-
             }
-
             &.has-mega-menu {
                 position: static;
             }
         }
-
         .sub-menu {
             position: absolute;
-
             left: 0px;
             right: 0px;
-
             height: auto;
             background-color: $active-color;
             visibility: hidden;
@@ -660,12 +561,10 @@ iframe {
             box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.3);
             background-color: $active-color-for;
             top: 100%;
-
             .sub-menu {
                 background-color: $active-color;
             }
             ul {
-
                 margin: 0px;
                 padding: 0px;
             }
@@ -674,7 +573,6 @@ iframe {
                 display: inline-block;
                 padding: 0px;
                 float: none;
-
                 a {
                     display: block;
                     line-height: 20px;
@@ -689,7 +587,6 @@ iframe {
                     letter-spacing: 1px;
                     float: none;
                     font-weight: 800;
-
                     span {
                         float: right;
                         margin: 18px 0px 0px 5px;
@@ -699,7 +596,6 @@ iframe {
                         height: 14px;
                     }
                     .menu-icon {
-
                         float: left;
                         width: 22px;
                         height: 22px;
@@ -707,7 +603,6 @@ iframe {
                         background-repeat: no-repeat;
                         opacity: 0.3;
                         @include transition();
-
                         &.icon-analytics {
                             background-image: url(../images/icon_analytics.png);
                         }
@@ -720,20 +615,13 @@ iframe {
                         &.icon-messages {
                             background-image: url(../images/icon_email.png);
                         }
-
                     }
                 }
-
                 &:last-child {
                     border: none;
                 }
-
-
-
                 &:hover {
                     background-color: transparent;
-
-
                     > a {
                         color: #fff;
                         background-color: transparent;
@@ -748,18 +636,11 @@ iframe {
                             opacity: 1;
                         }
                     }
-
-
                 }
             }
         }
-
-
     }
-
-
 }
-
 
 .sitemap {
     padding: 15px 0px 30px;
@@ -767,11 +648,9 @@ iframe {
         display: inline-block;
         font-size: 13px;
         color: $text-color-second;
-
         &:hover {
             color: $active-color;
         }
-
     }
     span {
         display: inline-block;
@@ -780,7 +659,6 @@ iframe {
         padding: 0px 4px;
     }
 }
-
 
 .test-hero {
     position: relative;
@@ -799,7 +677,6 @@ iframe {
         right: 30px;
         text-align: center;
         @media screen and (max-width: 991px) {
-
             right: 0px;
         }
         span {
@@ -816,9 +693,7 @@ iframe {
             font-size: $font-size-xs;
             letter-spacing: 2px;
             margin: 10px 0px 0px 0px;
-
             @media screen and (max-width: 991px) {
-
                 left: 0px;
                 font-size: 10px;
             }
@@ -826,13 +701,11 @@ iframe {
     }
 }
 
-
 .test-caption {
     color: $active-color;
     margin: 0px;
     padding: 0px;
     @media screen and (max-width: 1199px) {
-
         font-size: $font-size-h3;
     }
 }
@@ -859,7 +732,6 @@ iframe {
         color: $text-color-second;
         font-size: $font-size-xs;
         font-style: italic;
-
         .icon-ts {
             float: left;
             width: 16px;
@@ -867,7 +739,6 @@ iframe {
             margin: 0px 5px 0px 0px;
             background-repeat: no-repeat;
             background-position: center center;
-
             &.icon-view {
                 background-image: url(../images/icon_view.png);
             }
@@ -881,25 +752,25 @@ iframe {
     }
 }
 
-
-
 .user-box {
     margin: 70px 0px 0px 0px;
-
+    @media screen and (max-width: 991px) {
+        margin: 20px 0px 0px 0px;
+    }
     h2 {
-
         text-align: center;
         color: $active-color;
         margin: 70px 0px 20px 0px;
         font-size: $font-size-h1;
+        @media screen and (max-width: 991px) {
+            margin: 30px 0px 0px 0px;
+        }
     }
 }
 
 .us-user {
     text-align: center;
     div {
-
-
         width: 65px;
         height: 65px;
         display: inline-block;
@@ -912,19 +783,12 @@ iframe {
         font-weight: 700;
         color: $active-color-for;
         margin: 5px 0px;
-
-
     }
-
 }
 
-
 .welldone {
-
     margin: 15px 0px 30px 0px;
     div {
-
-
         width: 132px;
         height: 132px;
         margin: 0px auto;
@@ -942,7 +806,6 @@ iframe {
             font-family: $font-family-heading;
             font-weight: 700;
         }
-
     }
     p {
         color: $active-color-thrid;
@@ -953,12 +816,10 @@ iframe {
         font-family: $font-family-heading;
         font-weight: 700;
     }
-
 }
 
 .progress-radial {
     margin: 0px auto;
-
     position: relative;
     width: 132px;
     height: 132px;
@@ -998,15 +859,12 @@ iframe {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     .pr-icon-time {
         background: url("../images/icon_time.png") no-repeat center center;
         width: 18px;
         height: 20px;
         display: block;
         margin: 0px auto;
-
-
     }
     .pr-icon-true {
         background: url("../images/icon_tickround.png") no-repeat center center;
@@ -1035,7 +893,6 @@ iframe {
         font-size: 13px;
         font-family: $font-family-heading;
     }
-
 }
 
 .progress-radial.big {
@@ -1053,7 +910,6 @@ iframe {
     margin-left: 20px;
     margin-top: 20px;
     text-align: center;
-
 }
 
 /* -------------------------------------
@@ -1099,7 +955,6 @@ iframe {
     }
 }
 
-
 .txt-link {
     font-style: italic;
     margin: 15px 0px;
@@ -1108,7 +963,6 @@ iframe {
 .share-socer {
     margin: 70px 0px 0px 0px;
     text-align: center;
-
     h3 {
         color: $active-color;
         margin: 0px 0px 10px 0px;
@@ -1117,22 +971,17 @@ iframe {
         width: 100%;
         text-align: center;
         max-width: 300px;
-
     }
     &.share-ranking {
-
         h3 {
             margin: 0px;
         }
     }
-
 }
 
 .ss-share {
     display: inline-block;
-
     span {
-
         width: 22px;
         height: 22px;
         display: inline-block;
@@ -1140,7 +989,6 @@ iframe {
         line-height: 22px;
         margin: 0px 20px;
     }
-
     a {
         display: inline-block;
         width: 22px;
@@ -1153,13 +1001,91 @@ iframe {
         color: #fff;
         margin: 0px 2px;
         font-size: 10px;
-
         &:hover {
             background-color: $hover-color;
         }
     }
 }
 
+.band-score {
+    margin-top: 150px;
+}
+
+.bs-item {
+    span {
+        display: inline-block;
+        width: 100px;
+        font-size: 13px;
+        font-weight: 700;
+        font-family: $font-family-heading;
+        color: $text-color-thrid;
+    }
+    div {
+        width: 45px;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        font-size: 12px;
+        color: $active-color;
+        &.current {
+            font-weight: 700;
+            .your-score {
+                position: absolute;
+                content: "";
+                width: 35px;
+                height: 35px;
+                border: 1px solid $box-color;
+                background-color: #fff;
+                left: 50%;
+                top: -50px;
+                margin: 0px 0px 0px -17px;
+                border-radius: 2px;
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 0px;
+                    height: 0px;
+                    border: 8px solid transparent;
+                    position: absolute;
+                    border-top-color: #fff;
+                    left: 50%;
+                    bottom: -16px;
+                    margin: 0px 0px 0px -8px;
+                    z-index: 2;
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 0px;
+                    height: 0px;
+                    border: 9px solid transparent;
+                    position: absolute;
+                    border-top-color: $box-color;
+                    left: 50%;
+                    bottom: -18px;
+                    margin: 0px 0px 0px -9px;
+                    z-index: 1;
+                }
+                em {
+                    width: 25px;
+                    height: 25px;
+                    margin: 3px auto;
+                    display: block;
+                    border-radius: 50%;
+                    background-image: url(../images/icon_user.png);
+                    background-position: center center;
+                    background-size: 35px 35px;
+                    background-color: $icon-bg;
+                }
+            }
+        }
+    }
+    &.bs-item-correct {
+        div {
+            color: $text-color;
+        }
+    }
+}
 
 .box-caption-margin {
     margin-top: 50px;
@@ -1174,10 +1100,7 @@ iframe {
         line-height: 30px;
         color: $active-color;
         font-family: $font-family-heading;
-
-
         .bc-icon {
-
             width: 20px;
             height: 20px;
             float: left;
@@ -1187,17 +1110,12 @@ iframe {
             }
             &.icon-cup {
                 background: url("../images/icon_cup.png") no-repeat center center;
-
             }
             &.icon-review {
                 background: url("../images/icon_review.png") no-repeat center center;
-
             }
         }
-
     }
-
-
     .bc-right {
         float: right;
         a {
@@ -1212,19 +1130,14 @@ iframe {
             &:hover {
                 color: $text-color;
             }
-
-
         }
-
     }
     &.box-caption-white {
-
         p {
             color: #fff;
         }
     }
 }
-
 
 .list-answer {
     padding: 0px;
@@ -1232,7 +1145,6 @@ iframe {
     li {
         margin: 15px 0px 0px 0px;
         list-style: none;
-
         span {
             display: inline-block;
             width: 30px;
@@ -1246,12 +1158,9 @@ iframe {
             font-family: $font-family-heading;
             background-color: $active-color-five;
             border-radius: 50%;
-
         }
-
         em {
             display: inline-block;
-
             background: url("../images/icon_true.png") no-repeat center center;
             width: 14px;
             height: 10px;
@@ -1266,16 +1175,13 @@ iframe {
 }
 
 .table {
-
     border: none;
     table {
         width: 100%;
     }
-
     thead {
         background-color: $active-color;
         tr {
-
             th {
                 color: #fff;
                 font-family: $font-family-heading;
@@ -1284,16 +1190,12 @@ iframe {
                 padding: 15px 0px 15px 20px;
             }
         }
-
     }
     tbody {
         tr {
             td {
-
                 padding: 15px 0px 15px 20px;
                 font-size: 12px;
-
-
                 .icon-cup {
                     background-image: url(../images/icon_cup1.png);
                     display: inline-block;
@@ -1306,11 +1208,8 @@ iframe {
                     &.icon-cup3 {
                         background-image: url(../images/icon_cup3.png);
                     }
-
                 }
-
             }
-
         }
         tr:nth-child(odd) {
             background-color: $box-color;
@@ -1318,20 +1217,58 @@ iframe {
     }
 }
 
-
 .review-explanation {
     background-color: $active-color;
-    padding: 30px 0px;
+    padding: 30px 0px 60px 0px;
     min-height: 300px;
     margin: 60px 0px 0px 0px;
-
 }
 
+.reading-box-embeb {
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+    .reading-box {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        top: 0px;
+    }
+}
 
+.reviews-test-mobile {
+    margin: 0px 0px 50px 0px;
+    .icon-review {
+        background: url("../images/icon_review2.png") no-repeat center center;
+        width: 38px;
+        height: 38px;
+        margin: 20px auto;
+    }
+    a {
+        line-height: 45px;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        background-color: $button-bg;
+        font-size: $font-size-xs;
+        font-weight: 700;
+        font-family: $font-family-heading;
+        text-align: center;
+        span {
+            display: inline-block;
+            background: url("../images/icon_go.png") no-repeat center center;
+            width: 20px;
+            height: 20px;
+            margin: 0px 6px 0px 0px;
+            position: relative;
+            top: 5px;
+        }
+    }
+}
 
 .comment-item {
     margin: 0px 0px 25px 0px;
-
     padding: 0px 0px 0px 60px;
     .avatar {
         float: left;
@@ -1341,7 +1278,6 @@ iframe {
         img {
             width: 45px;
             height: 45px;
-
         }
     }
     p {
@@ -1351,11 +1287,7 @@ iframe {
             font-size: $font-size-base;
             font-weight: 800;
             color: $active-color;
-
         }
-
-
-
     }
     .c-info {
         margin: 10px 0px 0px 0px;
@@ -1364,11 +1296,9 @@ iframe {
             color: $active-color;
             display: inline-block;
             margin: 0px 0px 0px 20px;
-
             &:hover {
                 text-decoration: underline;
             }
-
         }
         span {
             font-size: $font-size-xs;
@@ -1376,14 +1306,11 @@ iframe {
             display: inline-block;
             color: #888;
             margin: 0px 10px 0px 0px;
-
         }
     }
     .reply-item {
-
         margin: 7px 0px;
         img {
-
             width: 25px;
             height: 25px;
             display: inline-block;
@@ -1393,19 +1320,16 @@ iframe {
             font-weight: 800;
             color: $active-color;
             margin: 0px 5px;
-
         }
         p {
             margin: 0px;
             display: inline-block;
             font-size: $font-size-sm;
         }
-
     }
 }
 
 .add-comment {
-
     input {
         font-size: $font-size-xs;
         display: block;
@@ -1415,27 +1339,20 @@ iframe {
         border: 1px solid $active-color;
         border-radius: 3px;
         outline: none;
-
     }
 }
 
-
-
 .other-module {
-
     .om-item {
         text-align: center;
         margin: 20px 0px 0px 0px;
         .om-icon {
-
             background: url("../images/icon_reading.png") no-repeat center center;
             width: 44px;
             height: 44px;
             margin: 0px auto;
-
         }
         p {
-
             font-size: $font-size-xs;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -1443,11 +1360,8 @@ iframe {
             color: $green;
             font-family: $font-family-heading;
             margin: 15px 0px 30px 0px;
-
-
         }
         .om-btn {
-
             @include transition();
             line-height: 47px;
             width: 100%;
@@ -1460,10 +1374,8 @@ iframe {
             font-family: $font-family-heading;
             display: block;
             margin: 0px 0px 10px 0px;
-
             &:hover {
                 opacity: 0.9;
-
             }
             span {
                 background: url("../images/icon_flash.png") no-repeat center center;
@@ -1485,13 +1397,11 @@ iframe {
                     top: 4px;
                     margin: 0px 5px 0px
                 }
-
             }
         }
         &.orange {
             .om-icon {
                 background: url("../images/icon_writing.png") no-repeat center center;
-
             }
             p {
                 color: $orange;
@@ -1499,12 +1409,10 @@ iframe {
             .om-btn {
                 background-color: $orange;
             }
-
         }
         &.pink {
             .om-icon {
                 background: url("../images/icon_speaking.png") no-repeat center center;
-
             }
             p {
                 color: $pink;
@@ -1512,23 +1420,18 @@ iframe {
             .om-btn {
                 background-color: $pink;
             }
-
         }
     }
 }
 
-
 .footer {
     margin: 60px 0px 0px 0px;
-
     background-color: $box-color;
-
     .footer-bar {
         min-height: 40px;
         background-color: $active-color;
         padding: 35px 0px;
         .follow-box {
-
             margin: 10px 0px 0px 0px;
             @media screen and (max-width: 991px) {
                 margin: 10px 0px 20px 0px;
@@ -1552,7 +1455,6 @@ iframe {
                 background-color: #fff;
                 margin: 0px 2px;
                 font-size: 10px;
-
                 &:hover {
                     background-color: $hover-color;
                 }
@@ -1560,7 +1462,6 @@ iframe {
         }
         .subcribe-input {
             input {
-
                 line-height: 50px;
                 width: 100%;
                 display: block;
@@ -1577,7 +1478,6 @@ iframe {
                 }
             }
             button {
-
                 line-height: 50px;
                 width: 100%;
                 display: block;
@@ -1598,10 +1498,7 @@ iframe {
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.9);
                     cursor: pointer;
-
-
                 }
-
             }
         }
     }
@@ -1614,7 +1511,6 @@ iframe {
         font-size: 12px;
         color: #a0a0a0;
     }
-
     .box-about {
         h3 {
             margin: 0px 0px 0px 0px;
@@ -1641,10 +1537,8 @@ iframe {
                     color: $active-color;
                 }
             }
-
         }
     }
-
     .fanpage {
         margin: 0px auto;
         max-width: 320px;
@@ -1653,12 +1547,6 @@ iframe {
         }
     }
 }
-
-
-
-
-
-
 
 /*==========reading-page=========*/
 
@@ -1676,13 +1564,10 @@ iframe {
     height: 175px;
     @include transition();
     border-bottom: 1px solid $icon_bg;
-
     @media screen and (max-width: 991px) {
         top:0px !important;
         height: 50px !important;
-
     }
-
     .nav-icon {
         margin-top: 5px;
     }
@@ -1692,22 +1577,18 @@ iframe {
         position: relative;
         .brand-reading {
             width: 150px;
-
             position: absolute;
             top: 25px;
             left: 50%;
             margin: 0px 0px 0px -75px;
             text-align: center;
             .om-icon {
-
                 background: url("../images/icon_reading.png") no-repeat center center;
                 width: 44px;
                 height: 44px;
                 margin: 0px auto;
-
             }
             p {
-
                 font-size: $font-size-xs;
                 text-transform: uppercase;
                 letter-spacing: 3px;
@@ -1715,12 +1596,8 @@ iframe {
                 color: $green;
                 font-family: $font-family-heading;
                 margin: 5px 0px 0px 0px;
-
-
             }
-
         }
-
         .test-hero {
             width: 50%;
             position: relative;
@@ -1732,14 +1609,12 @@ iframe {
                 border: 3px solid $icon-bg;
                 border-radius: 3px;
             }
-
         }
         .test-caption {
             font-size: $font-size-base;
         }
         .test-des {
             p {
-
                 display: inline-block;
                 margin: 0px 10px 0px 0px;
             }
@@ -1756,11 +1631,9 @@ iframe {
                 margin: 0px 1px;
             }
         }
-
     }
     .rh-menu {
         height: 50px;
-
         position: relative;
         padding: 0px 15px;
         .show-test-menu {
@@ -1777,7 +1650,6 @@ iframe {
             position: absolute;
             left: 15px;
             cursor: pointer;
-
             top: 5px;
             em {
                 background: url("../images/icon_arrow_down.png") no-repeat center center;
@@ -1787,10 +1659,8 @@ iframe {
                 position: relative;
                 margin: 0px 5px 0px 0px;
                 top: 3px;
-
             }
         }
-
         .menu-reading {
             text-align: center;
             ul {
@@ -1809,23 +1679,18 @@ iframe {
                         font-size: 13px;
                         font-family: $font-family-heading;
                         font-weight: 700;
-
                         color: $text-color-thrid;
                         @include transition();
                         @media screen and (max-width: 1199px) {
                             padding: 0px 10px;
-
                         }
                         @media screen and (max-width: 1050px) {
                             padding: 0px 5px;
-
                         }
                         &:hover {
                             color: $active-color;
                         }
-
                         span {
-
                             background-repeat: no-repeat;
                             background-position: center center;
                             width: 22px;
@@ -1834,51 +1699,38 @@ iframe {
                             display: inline-block;
                             &.icon-ask {
                                 background-image: url(../images/icon_ask.png);
-
                             }
                             &.icon-share {
                                 background-image: url(../images/icon_share.png);
-
                             }
                             &.icon-text {
                                 background-image: url(../images/icon_text_size.png);
-
                             }
                             &.icon-print {
                                 background-image: url(../images/icon_print.png);
-
                             }
                             &.icon-download {
                                 background-image: url(../images/icon_download.png);
-
                             }
                             &.icon-instruction {
                                 background-image: url(../images/icon_introduction.png);
-
                             }
                             &.icon-exit {
                                 background-image: url(../images/icon_exit.png);
-
                             }
                         }
-
                     }
                 }
             }
         }
-
     }
-
     .logo-brand {
-
         position: absolute;
         bottom: 10px;
         right: 15px;
         img {
-
             height: 35px;
         }
-
         @media screen and (max-width: 991px) {
             position: absolute;
             bottom: 10px !important;
@@ -1886,20 +1738,15 @@ iframe {
             right: auto !important;
             img {
                 height: 35px !important;
-
             }
-
         }
     }
     &.show-test {
         top: 0px;
         .logo-brand {
-
             position: absolute;
             bottom: 80px;
-
             img {
-
                 height: 75px;
             }
         }
@@ -1914,24 +1761,17 @@ iframe {
 }
 
 .open-menu {
-
     .reading-header {
         background-color: $active-color;
-
     }
 }
 
-
-
 .gutter {
-
-
     background-repeat: no-repeat;
     background-position: 50%;
     cursor: ew-resize;
     background: url("../images/vsizegrip.png") no-repeat center center;
     background-color: #898989;
-
 }
 
 .split.split-horizontal,
@@ -1947,25 +1787,18 @@ iframe {
 .gutter.gutter-horizontal {
     height: 100%;
     float: left;
-
 }
 
-
 .reading-box {
-
-
     background-color: #fff;
     position: fixed;
     bottom: 140px;
     top: 50px;
     left: 0px;
     right: 0px;
-
     @media screen and (max-width: 767px) {
         bottom: 90px;
-
     }
-
 }
 
 #split-one {
@@ -1985,20 +1818,12 @@ iframe {
     position: relative;
     float: left;
     height: 100%;
-
-
 }
 
-
-
 .split-left {
-
     padding: 30px;
-
     @media screen and (max-width: 991px) {
-
         padding: 15px;
-
     }
     p {
         margin: 20px 0px 0px 0px;
@@ -2023,13 +1848,11 @@ iframe {
         .sl-caption-right {
             float: right;
             em {
-
                 display: inline-block;
                 line-height: 30px;
                 font-size: 12px;
                 color: $text-color-for;
             }
-
             .btn-show-note {
                 display: inline-block;
                 line-height: 30px;
@@ -2049,27 +1872,19 @@ iframe {
                     margin: 0px 5px 0px 0px;
                     position: relative;
                     top: 4px;
-
                 }
-
             }
-
-
         }
         &.sl-caption-bottom {
             margin: 30px -30px -30px -30px;
             padding: 30px;
             background-color: $box-color;
-
             @media screen and (max-width: 991px) {
                 margin: 15px -15px -15px -15px;
                 padding: 15px;
-
             }
             .sl-caption-right {
                 float: right;
-
-
                 .btn-section {
                     display: inline-block;
                     line-height: 48px;
@@ -2086,27 +1901,18 @@ iframe {
                         line-height: 40px;
                         padding: 0px 10px;
                         font-size: 10px;
-
                     }
                     &:hover {
                         background-color: $active-color;
                         color: #fff;
-
                     }
-
-
                 }
-
-
             }
-
         }
     }
     .sl-item {
-
         margin: 20px 0px 0px 0px;
         span.number {
-
             display: inline-block;
             width: 30px;
             height: 30px;
@@ -2118,7 +1924,6 @@ iframe {
             text-align: center;
             line-height: 30px;
             color: #fff;
-
         }
         p {
             display: inline-block;
@@ -2128,7 +1933,6 @@ iframe {
         .sl-control {
             display: inline-block;
             margin: 5px 0px 0px 10px;
-
             a {
                 display: inline-block;
                 line-height: 25px;
@@ -2153,7 +1957,6 @@ iframe {
                     position: relative;
                     top: 4px;
                     margin: 0px 3px 0px 0px;
-
                     &.icon-ask {
                         background-image: url(../images/icon_ask1.png);
                     }
@@ -2163,10 +1966,44 @@ iframe {
                     &.icon-explain {
                         background-image: url(../images/icon_explain.png);
                     }
-
-
                 }
             }
+        }
+    }
+    &.cyan {
+        .sl-caption span {
+            color: $active-color-five;
+        }
+        .sl-item span.number {
+            background-color: $active-color-five;
+        }
+        .sl-item .sl-control a {
+            color: $active-color-five;
+            border: 1px solid $active-color-five;
+            &:hover {
+                background-color: $active-color-five;
+                color: #fff;
+            }
+        }
+        .sl-caption h2 {
+            color: #268695;
+        }
+        .sl-item .sl-control a span.icon-ask {
+            background-image: url(../images/icon_ask3.png);
+        }
+        .sl-item .sl-control a span.icon-locale {
+            background-image: url(../images/icon_locale1.png);
+        }
+        .sl-item .sl-control a span.icon-listen {
+            background-image: url(../images/icon_listen1.png);
+            background-position: center center;
+            width: 16px;
+            height: 14px;
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            margin: 0px 3px 0px 0px;
+            background-repeat: no-repeat;
         }
     }
 }
@@ -2174,9 +2011,7 @@ iframe {
 .split-right {
     background-color: #84ae90;
     padding: 30px;
-
     .text-locale {
-
         display: inline-block;
         position: relative;
         em {
@@ -2211,39 +2046,28 @@ iframe {
                 margin: 0px 0px 0px -5px;
             }
         }
-
     }
-
     @media screen and (max-width: 991px) {
-
         padding: 15px;
-
     }
     p {
-
         margin: 20px 0px 0px 0px;
-
     }
     .sr-item {
         p {
             margin: 0px;
             display: inline-block;
             padding: 0px 30px 0px 10px;
-
             background-color: #5b936b;
             border: 1px solid $green;
             border-radius: 3px;
             em {
-
                 float: right;
                 background-image: url(../images/icon_explain1.png);
                 width: 16px;
                 height: 14px;
                 margin: 3px -25px 0px 0px;
             }
-
-
-
         }
         span.number {
             display: inline-block;
@@ -2259,13 +2083,109 @@ iframe {
             margin: 0px 0px 0px 10px;
             color: #fff;
         }
+    }
+    &.split-video {
+        background-color: #84d1dd;
+    }
+}
 
+.player {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    background-color: #d6f0f4;
+    z-index: 999;
+    padding: 15px 40px 15px 40px;
+    .play-inner {
+        padding: 0px 0px 0px 140px;
+        .play-control {
+            float: left;
+            width: 140px;
+            margin: 0px 0px 0px -140px;
+            .p-prev {
+                background: url("../images/icon_control_prev.png") no-repeat center center;
+                width: 12px;
+                height: 12px;
+                float: left;
+                margin: 1px 0px 0px 0px;
+                cursor: pointer;
+            }
+            .p-next {
+                background: url("../images/icon_control_next.png") no-repeat center center;
+                width: 12px;
+                height: 12px;
+                float: left;
+                margin: 1px 0px 0px 30px;
+                cursor: pointer;
+            }
+            .p-play {
+                background: url("../images/icon_control_play.png") no-repeat center center;
+                width: 14px;
+                height: 16px;
+                float: left;
+                margin: -1px 0px 0px 30px;
+                cursor: pointer;
+            }
+        }
+        .play-process {
+            position: relative;
+            width: 100%;
+            margin: 3px 0px 0px 0px;
+            padding: 4px 37px 0px 37px;
+            span {
+                position: absolute;
+                left: 0px;
+                display: block;
+                width: 37px;
+                top: 0px;
+                font-weight: 700;
+                font-size: 10px;
+                font-family: $font-family-heading;
+                color: #84d1dd;
+                text-align: left;
+                &.time-end {
+                    right: 0px;
+                    left: auto;
+                    text-align: right;
+                }
+            }
+            .process-track {
+                height: 5px;
+                border-radius: 4px;
+                background-color: #eff9fb;
+                position: relative;
+                .process-state {
+                    position: absolute;
+                    left: 0px;
+                    bottom: 0px;
+                    top: 0px;
+                    border-radius: 4px;
+                    background-color: #84d1dd;
+                    .p-round {
+                        width: 16px;
+                        height: 16px;
+                        display: block;
+                        border-radius: 50%;
+                        background-color: #84d1dd;
+                        cursor: pointer;
+                        position: absolute;
+                        right: -8px;
+                        top: -5px;
+                        @include transition();
+                        &:hover {
+                            background-color: $active-color-five;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 .nicescroll-rails {
     opacity: 1 !important;
-
     &.nicescroll-rails-vr {
         width: 3px !important;
         .nicescroll-cursors {
@@ -2273,17 +2193,12 @@ iframe {
         }
     }
     background-color: $button-bg !important;
-
     .nicescroll-cursors {
         border-radius: 0px !important;
-
         background-color: #7E90A2 !important;
         border: none !important;
-
-
     }
 }
-
 
 .reading-footer {
     position: fixed;
@@ -2293,12 +2208,9 @@ iframe {
     padding: 15px;
     height: 140px;
     background-color: $active-color;
-
     @media screen and (max-width: 767px) {
         height: 90px;
         padding: 10px 10px;
-
-
     }
     .rf-time {
         float: right;
@@ -2308,27 +2220,21 @@ iframe {
             width: 52px;
             height: 56px;
             margin: 10px auto 0px auto;
-
         }
         span {
             font-size: $font-size-h1;
             font-weight: 300;
             color: #fff;
         }
-
         @media screen and (max-width: 767px) {
             .icon-time {
                 display: none;
-
             }
             span {
                 display: block;
                 margin: 10px 0px 0px 0px;
             }
-
-
         }
-
     }
     .rf-button-wrap {
         float: right;
@@ -2339,9 +2245,7 @@ iframe {
             margin-top: -5px;
             margin-left: 10px;
             max-width: 210px;
-
         }
-
         .rf-button {
             width: 110px;
             height: 50px;
@@ -2353,7 +2257,6 @@ iframe {
             align-items: center;
             justify-content: center;
             float: left;
-
             color: $green;
             font-size: $font-size-sm;
             font-weight: 700;
@@ -2363,58 +2266,44 @@ iframe {
             @include transition();
             &:hover {
                 background-color: rgba(255, 255, 255, 1);
-
             }
-
             @media screen and (max-width: 767px) {
                 font-size: 12px;
                 height: 37px;
                 margin: 5px 0px 0px 5px;
                 width: 100px;
-
-
             }
             span {
-
                 width: 30px;
-
                 display: block;
                 height: 25px;
                 background-repeat: no-repeat;
                 margin: 0px 6px 0px 0px;
                 background-position: center center;
                 &.icon-ask {
-
                     background-image: url(../images/icon_ask2.png);
                 }
                 &.icon-review {
-
                     background-image: url(../images/icon_review1.png);
                 }
                 &.icon-solution {
-
                     background-image: url(../images/icon_lego2.png);
                 }
                 &.icon-submit {
-
                     background-image: url(../images/icon_submit.png);
                 }
                 &.icon-pallete {
                     background-image: url(../images/icon_pallete1.png);
                 }
             }
-
         }
     }
-
     .question-panel {
         float: left;
         max-width: 750px;
         position: relative;
-
         height: 110px;
         @media screen and (max-width: 767px) {
-
             position: absolute;
             bottom: 90px;
             left: 0px;
@@ -2427,21 +2316,14 @@ iframe {
             height: 280px;
             &.show {
                 display: block;
-
             }
-
         }
-
-
         .qp-items {
-
             height: 90px;
             overflow: auto;
             @media screen and (max-width: 767px) {
                 height: 200px;
-
             }
-
         }
         @media screen and (max-width: 1199px) {
             max-width: 600px;
@@ -2451,9 +2333,7 @@ iframe {
         }
         @media screen and (max-width: 767px) {
             max-width: 900px;
-
         }
-
         .qp-caption {
             span {
                 display: inline-block;
@@ -2469,7 +2349,6 @@ iframe {
                     margin: 5px 5px 0px 0px;
                 }
             }
-
         }
         .qp-item {
             float: left;
@@ -2487,11 +2366,8 @@ iframe {
             &.qp-item-unanswered {
                 background-color: $green-light;
             }
-
         }
-
         .qp-note {
-
             position: absolute;
             top: 0px;
             right: 20px;
@@ -2499,7 +2375,6 @@ iframe {
                 position: relative;
                 top: auto;
                 right: auto;
-
             }
             span {
                 display: inline-block;
@@ -2519,6 +2394,5 @@ iframe {
                 }
             }
         }
-
     }
 }
