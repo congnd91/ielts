@@ -7,7 +7,6 @@
 
         /**Preload**/
         $('#page-loader').delay(800).fadeOut(600, function () {
-            // $(".split-item").getNiceScroll().resize();
             $('body').fadeIn();
 
         });
@@ -38,38 +37,39 @@
 
         //Reading page
 
-        if (window.innerWidth <= 768) {
-            var split = Split(['#slpit-one', '#slpit-two'], {
-                sizes: [50, 50],
-                minSize: 0,
-                direction: 'vertical',
-                onDrag: function () {
-                    $(".split-item").getNiceScroll().resize();
-                },
+        if ($('.api').length) {
+
+            if (window.innerWidth <= 768) {
+                var split = Split(['#slpit-one', '#slpit-two'], {
+                    sizes: [50, 50],
+                    minSize: 0,
+                    direction: 'vertical',
+                    onDrag: function () {
+                        $(".split-item").getNiceScroll().resize();
+                    },
 
 
 
-            });
+                });
 
-        } else {
-            var split = Split(['#slpit-one', '#slpit-two'], {
-                sizes: [50, 50],
-                minSize: 0,
-                onDrag: function () {
-                    $(".split-item").getNiceScroll().resize();
-                },
+            } else {
+                var split = Split(['#slpit-one', '#slpit-two'], {
+                    sizes: [50, 50],
+                    minSize: 0,
+                    onDrag: function () {
+                        $(".split-item").getNiceScroll().resize();
+                    },
 
 
 
-            });
+                });
+
+            }
+            setTimeout(function () {
+                $(".split-item").getNiceScroll().resize();
+            }, 400);
 
         }
-        setTimeout(function () {
-
-            $(".split-item").getNiceScroll().resize();
-        }, 400);
-
-
         //split
         $(".split-item").niceScroll({
             autohidemode: 'false'

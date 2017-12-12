@@ -1270,6 +1270,8 @@ iframe {
 .footer {
   margin: 60px 0px 0px 0px;
   background-color: #f5f5f5; }
+  .footer.footer-fix-margin {
+    margin: 0px; }
   .footer .footer-bar {
     min-height: 40px;
     background-color: #284664;
@@ -1379,7 +1381,7 @@ iframe {
 .reading-header {
   position: fixed;
   background-color: #fff;
-  z-index: 99;
+  z-index: 999;
   left: 0px;
   right: 0px;
   top: -125px;
@@ -1600,6 +1602,13 @@ iframe {
       padding: 15px; } }
   .split-left p {
     margin: 20px 0px 0px 0px; }
+  .split-left .nodepad {
+    padding: 10px 10px;
+    background-color: #d4dae0;
+    border-radius: 5px;
+    margin: 0px 0px 20px 0px; }
+    .split-left .nodepad p {
+      margin: 0px; }
   .split-left .sl-caption span {
     font-size: 12px;
     font-weight: 700;
@@ -1632,6 +1641,12 @@ iframe {
       border-radius: 3px;
       margin: 0px 0px 0px 10px;
       color: #284664; }
+      .split-left .sl-caption .sl-caption-right .btn-show-note.active {
+        color: #fff;
+        background-color: #284664; }
+        .split-left .sl-caption .sl-caption-right .btn-show-note.active strong {
+          background-image: url(../images/icon_edit1.png);
+          top: 2px; }
       .split-left .sl-caption .sl-caption-right .btn-show-note strong {
         background-image: url(../images/icon_edit.png);
         width: 13px;
@@ -1929,7 +1944,7 @@ iframe {
   background-color: #284664; }
   @media screen and (max-width: 767px) {
     .reading-footer {
-      height: 90px;
+      height: 100px;
       padding: 10px 10px; } }
   .reading-footer .rf-time {
     float: right;
@@ -1963,7 +1978,7 @@ iframe {
       width: 110px;
       height: 50px;
       border-radius: 5px;
-      background-color: rgba(255, 255, 255, 0.7);
+      background-color: rgba(255, 255, 255, 0.9);
       padding: 0px 7px 0px 7px;
       margin: 10px 0px 0px 10px;
       display: flex;
@@ -1979,7 +1994,8 @@ iframe {
       -moz-transition: all ease 0.2s;
       -o-transition: all ease 0.2s;
       -webkit-transition: all ease 0.2s;
-      transition: all ease 0.2s; }
+      transition: all ease 0.2s;
+      cursor: pointer; }
       .reading-footer .rf-button-wrap .rf-button:hover {
         background-color: white; }
       @media screen and (max-width: 767px) {
@@ -2013,7 +2029,7 @@ iframe {
     @media screen and (max-width: 767px) {
       .reading-footer .question-panel {
         position: absolute;
-        bottom: 90px;
+        bottom: 100px;
         left: 0px;
         right: 0px;
         border-bottom: 1px solid #536b83;
@@ -2089,5 +2105,177 @@ iframe {
           background-color: #265a35; }
           .reading-footer .question-panel .qp-note span em.unanswered {
             background-color: #327846; }
+  .reading-footer.cyan .question-panel .qp-item {
+    background-color: #268695; }
+  .reading-footer.cyan .question-panel .qp-item.qp-item-unanswered {
+    background-color: #32b3c7; }
+  .reading-footer.cyan .question-panel .qp-note span em {
+    background-color: #268695; }
+  .reading-footer.cyan .question-panel .qp-note span em.unanswered {
+    background-color: #32b3c7; }
+  .reading-footer.cyan .rf-button-wrap .rf-button {
+    color: #32b3c7; }
+  .reading-footer.cyan .rf-button-wrap .rf-button span.icon-ask {
+    background-image: url(../images/icon_ask4.png); }
+  .reading-footer.cyan .rf-button-wrap .rf-button span.icon-review {
+    background-image: url(../images/icon_review3.png); }
+  .reading-footer.cyan .rf-button-wrap .rf-button span.icon-pallete {
+    background-image: url(../images/icon_pallete2.png); }
+  .reading-footer.cyan .rf-button-wrap .rf-button span.icon-solution {
+    background-image: url(../images/icon_lego3.png); }
+  .reading-footer.cyan .rf-button-wrap .rf-button span.icon-submit {
+    background-image: url(../images/icon_submit1.png); }
+
+/***********************listening-page"*************/
+.listening-page {
+  padding: 50px 390px 0px 0px;
+  position: relative; }
+  @media screen and (max-width: 1199px) {
+    .listening-page {
+      padding: 50px 300px 0px 0px; } }
+  @media screen and (max-width: 767px) {
+    .listening-page {
+      padding: 50px 0px 0px 0px; } }
+  .listening-page .player-listening {
+    height: 50px;
+    background-color: #d6f0f4;
+    position: fixed;
+    z-index: 99;
+    top: 50px;
+    left: 0px;
+    right: 390px; }
+    @media screen and (max-width: 1199px) {
+      .listening-page .player-listening {
+        right: 300px; } }
+    @media screen and (max-width: 767px) {
+      .listening-page .player-listening {
+        right: 0px; } }
+    .listening-page .player-listening .player {
+      position: relative;
+      margin: 0px auto;
+      max-width: 725px; }
+  .listening-page .lp-left {
+    float: left;
+    width: 100%;
+    min-height: 600px; }
+    @media screen and (max-width: 767px) {
+      .listening-page .lp-left {
+        float: none; } }
+    .listening-page .lp-left .split-left {
+      margin: 0px auto;
+      max-width: 725px;
+      padding-top: 70px; }
+    .listening-page .lp-left .box-ad728 {
+      margin: 30px 0px;
+      text-align: center; }
+  .listening-page .end-the-test {
+    text-align: center; }
+    .listening-page .end-the-test h3 {
+      font-size: 20px;
+      font-weight: 700;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      color: #284664; }
+    .listening-page .end-the-test a.btn-submit {
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      color: #32b3c7;
+      border-radius: 3px;
+      width: 150px;
+      height: 45px;
+      line-height: 45px;
+      background-color: #d6f0f4;
+      margin: 30px 0px;
+      display: inline-block;
+      -moz-transition: all ease 0.2s;
+      -o-transition: all ease 0.2s;
+      -webkit-transition: all ease 0.2s;
+      transition: all ease 0.2s; }
+      .listening-page .end-the-test a.btn-submit:hover {
+        opacity: 0.9; }
+      .listening-page .end-the-test a.btn-submit span {
+        background: url("../images/icon_submit1.png") no-repeat center center;
+        display: inline-block;
+        position: relative;
+        width: 19px;
+        height: 20px;
+        margin: 0px 5px 0px 0px;
+        top: 5px; }
+    .listening-page .end-the-test .report {
+      display: inline-block;
+      line-height: 25px;
+      padding: 0px 20px 0px 20px;
+      background-color: #f5f5f5;
+      border-radius: 20px;
+      margin-bottom: 40px;
+      font-size: 12px;
+      color: #787878;
+      -moz-transition: all ease 0.2s;
+      -o-transition: all ease 0.2s;
+      -webkit-transition: all ease 0.2s;
+      transition: all ease 0.2s; }
+      .listening-page .end-the-test .report:hover {
+        color: #282828; }
+  .listening-page .lp-right {
+    width: 390px;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #284664;
+    padding: 30px;
+    float: right; }
+    @media screen and (max-width: 1199px) {
+      .listening-page .lp-right {
+        width: 300px;
+        padding: 15px; } }
+    @media screen and (max-width: 767px) {
+      .listening-page .lp-right {
+        margin: 0px;
+        float: none;
+        width: 100%;
+        padding: 0px;
+        position: relative;
+        top: unset;
+        right: unset;
+        bottom: unset; } }
+    .listening-page .lp-right .box-ads {
+      margin-bottom: 30px;
+      margin: 0px auto 30px auto;
+      text-align: center; }
+    .listening-page .lp-right .reading-footer {
+      position: relative;
+      left: auto;
+      top: auto;
+      bottom: auto;
+      right: auto;
+      height: auto;
+      padding: 0px; }
+      @media screen and (max-width: 767px) {
+        .listening-page .lp-right .reading-footer {
+          height: 100px;
+          padding: 5px; }
+          .listening-page .lp-right .reading-footer .rf-time {
+            float: left;
+            margin: 15px 0px 0px 0px; } }
+      .listening-page .lp-right .reading-footer .qp-items {
+        height: auto;
+        margin: 10px 0px 0px 0px; }
+      .listening-page .lp-right .reading-footer .question-panel {
+        float: none;
+        height: auto; }
+        .listening-page .lp-right .reading-footer .question-panel .qp-note {
+          margin: 30px 0px 40px 0px;
+          position: relative;
+          right: auto;
+          top: auto; }
+          @media screen and (max-width: 767px) {
+            .listening-page .lp-right .reading-footer .question-panel .qp-note {
+              margin: 10px 0px; } }
+          .listening-page .lp-right .reading-footer .question-panel .qp-note span {
+            margin: 0px 20px 0px 0px; }
+      .listening-page .lp-right .reading-footer .rf-button-wrap {
+        margin: 0px; }
 
 /*# sourceMappingURL=main.css.map */

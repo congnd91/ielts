@@ -1427,6 +1427,9 @@ iframe {
 .footer {
     margin: 60px 0px 0px 0px;
     background-color: $box-color;
+    &.footer-fix-margin {
+        margin: 0px;
+    }
     .footer-bar {
         min-height: 40px;
         background-color: $active-color;
@@ -1557,7 +1560,7 @@ iframe {
 .reading-header {
     position: fixed;
     background-color: #fff;
-    z-index: 99;
+    z-index: 999;
     left: 0px;
     right: 0px;
     top: -125px;
@@ -1828,6 +1831,17 @@ iframe {
     p {
         margin: 20px 0px 0px 0px;
     }
+    .nodepad {
+
+        padding: 10px 10px;
+        background-color: #d4dae0;
+        border-radius: 5px;
+        margin: 0px 0px 20px 0px;
+
+        p {
+            margin: 0px;
+        }
+    }
     .sl-caption {
         span {
             font-size: $font-size-xs;
@@ -1864,6 +1878,14 @@ iframe {
                 border-radius: 3px;
                 margin: 0px 0px 0px 10px;
                 color: $active-color;
+                &.active {
+                    color: #fff;
+                    background-color: $active-color;
+                    strong {
+                        background-image: url(../images/icon_edit1.png);
+                        top: 2px;
+                    }
+                }
                 strong {
                     background-image: url(../images/icon_edit.png);
                     width: 13px;
@@ -2209,7 +2231,7 @@ iframe {
     height: 140px;
     background-color: $active-color;
     @media screen and (max-width: 767px) {
-        height: 90px;
+        height: 100px;
         padding: 10px 10px;
     }
     .rf-time {
@@ -2250,7 +2272,7 @@ iframe {
             width: 110px;
             height: 50px;
             border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 0px 7px 0px 7px;
             margin: 10px 0px 0px 10px;
             display: flex;
@@ -2264,6 +2286,7 @@ iframe {
             text-align: left;
             line-height: 15px;
             @include transition();
+            cursor: pointer;
             &:hover {
                 background-color: rgba(255, 255, 255, 1);
             }
@@ -2305,7 +2328,7 @@ iframe {
         height: 110px;
         @media screen and (max-width: 767px) {
             position: absolute;
-            bottom: 90px;
+            bottom: 100px;
             left: 0px;
             right: 0px;
             border-bottom: 1px solid $active-color-for;
@@ -2395,4 +2418,232 @@ iframe {
             }
         }
     }
+
+    &.cyan {
+        .question-panel .qp-item {
+            background-color: $active-color-thrid;
+        }
+        .question-panel .qp-item.qp-item-unanswered {
+            background-color: $active-color-five;
+        }
+
+        .question-panel .qp-note span em {
+            background-color: $active-color-thrid;
+        }
+        .question-panel .qp-note span em.unanswered {
+            background-color: $active-color-five;
+        }
+
+        .rf-button-wrap .rf-button {
+            color: $active-color-five;
+        }
+        .rf-button-wrap .rf-button span.icon-ask {
+            background-image: url(../images/icon_ask4.png);
+        }
+
+        .rf-button-wrap .rf-button span.icon-review {
+            background-image: url(../images/icon_review3.png);
+        }
+
+        .rf-button-wrap .rf-button span.icon-pallete {
+            background-image: url(../images/icon_pallete2.png);
+        }
+        .rf-button-wrap .rf-button span.icon-solution {
+            background-image: url(../images/icon_lego3.png);
+        }
+        .rf-button-wrap .rf-button span.icon-submit {
+            background-image: url(../images/icon_submit1.png);
+        }
+
+    }
+}
+
+/***********************listening-page"*************/
+
+.listening-page {
+    padding: 50px 390px 0px 0px;
+    position: relative;
+    @media screen and (max-width: 1199px) {
+        padding: 50px 300px 0px 0px;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 50px 0px 0px 0px;
+    }
+    .player-listening {
+        height: 50px;
+        background-color: #d6f0f4;
+        position: fixed;
+        z-index: 99;
+        top: 50px;
+        left: 0px;
+        right: 390px;
+
+        @media screen and (max-width: 1199px) {
+            right: 300px;
+        }
+        @media screen and (max-width: 767px) {
+            right: 0px;
+        }
+        .player {
+            position: relative;
+            margin: 0px auto;
+            max-width: 725px;
+        }
+
+    }
+    .lp-left {
+        float: left;
+        width: 100%;
+        min-height: 600px;
+        @media screen and (max-width: 767px) {
+            float: none;
+        }
+
+        .split-left {
+            margin: 0px auto;
+            max-width: 725px;
+            padding-top: 70px;
+        }
+        .box-ad728 {
+            margin: 30px 0px;
+            text-align: center;
+        }
+    }
+
+    .end-the-test {
+
+        text-align: center;
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: $font-family-heading;
+            text-transform: uppercase;
+            color: $active-color;
+
+        }
+
+        a.btn-submit {
+            font-size: $font-size-sm;
+            font-family: $font-family-heading;
+            font-weight: 700;
+            color: $active-color-five;
+            border-radius: 3px;
+            width: 150px;
+            height: 45px;
+            line-height: 45px;
+            background-color: #d6f0f4;
+            margin: 30px 0px;
+            display: inline-block;
+            @include transition();
+            &:hover {
+                opacity: 0.9;
+            }
+            span {
+                background: url("../images/icon_submit1.png") no-repeat center center;
+                display: inline-block;
+                position: relative;
+                width: 19px;
+                height: 20px;
+                margin: 0px 5px 0px 0px;
+                top: 5px;
+
+            }
+
+        }
+        .report {
+            display: inline-block;
+            line-height: 25px;
+            padding: 0px 20px 0px 20px;
+            background-color: $box-color;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            font-size: 12px;
+            color: $text-color-second;
+            @include transition();
+            &:hover {
+                color: $text-color;
+            }
+        }
+    }
+
+    .lp-right {
+        width: 390px;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        bottom: 0px;
+        background-color: $active-color;
+
+        padding: 30px;
+
+        float: right;
+        @media screen and (max-width: 1199px) {
+            width: 300px;
+
+            padding: 15px;
+        }
+        @media screen and (max-width: 767px) {
+            margin: 0px;
+            float: none;
+            width: 100%;
+            padding: 0px;
+            position: relative;
+            top: unset;
+            right: unset;
+            bottom: unset;
+        }
+
+        .box-ads {
+            margin-bottom: 30px;
+            margin: 0px auto 30px auto;
+            text-align: center;
+        }
+
+        .reading-footer {
+            position: relative;
+            left: auto;
+            top: auto;
+            bottom: auto;
+            right: auto;
+            height: auto;
+            padding: 0px;
+            @media screen and (max-width: 767px) {
+                height: 100px;
+                padding: 5px;
+
+                .rf-time {
+                    float: left;
+                    margin: 15px 0px 0px 0px;
+                }
+            }
+            .qp-items {
+                height: auto;
+                margin: 10px 0px 0px 0px;
+            }
+            .question-panel {
+                float: none;
+                height: auto;
+                .qp-note {
+
+                    margin: 30px 0px 40px 0px;
+                    position: relative;
+                    right: auto;
+                    top: auto;
+                    @media screen and (max-width: 767px) {
+                        margin: 10px 0px;
+                    }
+
+                    span {
+                        margin: 0px 20px 0px 0px;
+                    }
+                }
+            }
+            .rf-button-wrap {
+                margin: 0px;
+            }
+        }
+
+    }
+
+
 }
