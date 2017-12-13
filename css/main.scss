@@ -1631,6 +1631,21 @@ iframe {
                 font-family: $font-family-heading;
                 margin: 5px 0px 0px 0px;
             }
+            &.brand-listening {
+                .om-icon {
+                    background: url("../images/icon_listen.png") no-repeat center center;
+
+                }
+                p {
+                    font-size: $font-size-xs;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-weight: 700;
+                    color: $active-color-second;
+                    font-family: $font-family-heading;
+                    margin: 5px 0px 0px 0px;
+                }
+            }
         }
         .test-hero {
             width: 50%;
@@ -2687,14 +2702,14 @@ iframe {
     @media screen and (max-width: 1199px) {
         padding: 0px 300px 0px 0px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         padding: 0px 0px 0px 0px;
     }
 
     .colleft {
         width: 100%;
         min-height: 600px;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
             float: none;
         }
     }
@@ -2705,19 +2720,22 @@ iframe {
         background-color: $box-color;
         width: 390px;
         position: absolute;
-        top: 50px;
+        top: 0px;
         right: 0px;
 
         bottom: 0px;
         padding: 30px;
 
         float: right;
+        &.colright-white {
+            background-color: #fff;
+        }
         @media screen and (max-width: 1199px) {
             width: 300px;
 
             padding: 15px;
         }
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
             margin: 0px;
             float: none;
             width: 100%;
@@ -2772,8 +2790,9 @@ iframe {
 }
 
 .book-item {
-    margin: 30px 0px 0px 0px;
+    margin: 0px auto 30px auto;
     text-align: center;
+
 
     img {
         border-radius: 5px;
@@ -2797,4 +2816,186 @@ iframe {
 .a600 {
 
     text-align: center;
+}
+
+.box-tag {
+    .box-caption {
+        margin-bottom: -5px;
+    }
+    .tag-icon {
+        background: url("../images/icon_tag.png") no-repeat center center;
+        width: 20px;
+        height: 25px;
+        display: inline-block;
+        position: relative;
+        top: 9px;
+
+    }
+}
+
+.tag-item {
+    display: inline-block;
+    line-height: 25px;
+    padding: 0px 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 0px 0px 10px 10px;
+    font-size: $font-size-xs;
+    font-weight: 800;
+    color: $text-color-thrid;
+    @include transition();
+    &:hover {
+        color: $active-color;
+    }
+}
+
+.mostview-item {
+    background-color: #fff;
+    padding: 10px 10px 10px 85px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 3px;
+    img {
+        width: 65px;
+        height: 65px;
+        float: left;
+        margin: 2px 0px 0px -75px;
+    }
+    h3 {
+
+        margin: -5px 0px 0px 0px;
+        padding: 0px;
+        line-height: 0.9;
+        a {
+            font-size: 13px;
+            font-family: $font-family-heading;
+            font-weight: 800;
+            color: $active-color;
+        }
+    }
+    p {
+        font-size: $font-size-xs;
+        margin: 0px;
+        line-height: 1.2;
+        margin: 3px 0px 0px 0px;
+
+    }
+    .mi-tag {
+        font-size: $font-size-xs;
+        font-weight: 800;
+        color: $text-color-thrid;
+        em {
+            background: url("../images/icon_tag1.png") no-repeat center center;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            margin: 0px 4px 0px 0px;
+        }
+
+    }
+    .mi-view {
+        float: right;
+        font-size: 10px;
+        margin: 3px 0px 0px 0px;
+
+        color: #a0a0a0;
+        em {
+            background: url("../images/icon_view.png") no-repeat center center;
+            width: 16px;
+            height: 12px;
+            display: inline-block;
+            position: relative;
+            top: 2px;
+
+            margin: 0px 4px 0px 0px;
+        }
+    }
+}
+
+.feature-releases {
+    margin: 50px 0px 0px 0px;
+    background-color: $active-color;
+    padding: 20px 0px;
+    .box-caption {
+        margin: 20px 0px 20px 20px;
+    }
+    .box-caption p {
+        color: #fff;
+
+    }
+    .book-item h3 a {
+        color: #fff;
+    }
+}
+
+.tab-test {
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: -10px 0px 40px 0px;
+
+        li {
+            display: inline-block;
+            border-bottom: 4px solid transparent;
+            a {
+
+                display: block;
+                padding: 0px 25px;
+                line-height: 40px;
+                opacity: 0.7;
+                font-size: 13px;
+                font-weight: 700;
+                font-family: $font-family-heading;
+                color: $active-color;
+
+                @media screen and (max-width: 767px) {
+                    padding: 0px 3px;
+                    font-size: 10px;
+                    span {
+                        margin: 0px 0px 0px 0px;
+                    }
+                }
+
+                span {
+
+                    &.icon-alltest {
+                        background: url("../images/icon_alltest.png") no-repeat center center;
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+                        margin: 0px 4px 0px 0px;
+                        position: relative;
+                        top: 5px;
+                    }
+                    &.icon-academic {
+                        background: url("../images/icon_academic.png") no-repeat center center;
+                        width: 21px;
+                        height: 18px;
+                        display: inline-block;
+                        margin: 0px 4px 0px 0px;
+                        position: relative;
+                        top: 5px;
+                    }
+                    &.icon-general-traning {
+                        background: url("../images/icon_genral.png") no-repeat center center;
+                        width: 18px;
+                        height: 20px;
+                        display: inline-block;
+                        margin: 0px 4px 0px 0px;
+                        position: relative;
+                        top: 5px;
+                    }
+                }
+            }
+            &.active {
+                border-bottom: 4px solid $active-color;
+                a {
+                    opacity: 1;
+
+
+                }
+            }
+        }
+    }
 }

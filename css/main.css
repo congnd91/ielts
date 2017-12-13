@@ -1444,6 +1444,16 @@ iframe {
         color: #327846;
         font-family: "Montserrat", sans-serif;
         margin: 5px 0px 0px 0px; }
+      .reading-header .rh-top .brand-reading.brand-listening .om-icon {
+        background: url("../images/icon_listen.png") no-repeat center center; }
+      .reading-header .rh-top .brand-reading.brand-listening p {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 700;
+        color: #32b3c7;
+        font-family: "Montserrat", sans-serif;
+        margin: 5px 0px 0px 0px; }
     .reading-header .rh-top .test-hero {
       width: 50%;
       position: relative;
@@ -2307,13 +2317,13 @@ iframe {
   @media screen and (max-width: 1199px) {
     .cols {
       padding: 0px 300px 0px 0px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     .cols {
       padding: 0px 0px 0px 0px; } }
   .cols .colleft {
     width: 100%;
     min-height: 600px; }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       .cols .colleft {
         float: none; } }
   .cols .colright {
@@ -2321,16 +2331,18 @@ iframe {
     background-color: #f5f5f5;
     width: 390px;
     position: absolute;
-    top: 50px;
+    top: 0px;
     right: 0px;
     bottom: 0px;
     padding: 30px;
     float: right; }
+    .cols .colright.colright-white {
+      background-color: #fff; }
     @media screen and (max-width: 1199px) {
       .cols .colright {
         width: 300px;
         padding: 15px; } }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       .cols .colright {
         margin: 0px;
         float: none;
@@ -2377,7 +2389,7 @@ iframe {
   padding: 0px 15px; }
 
 .book-item {
-  margin: 30px 0px 0px 0px;
+  margin: 0px auto 30px auto;
   text-align: center; }
   .book-item img {
     border-radius: 5px;
@@ -2392,5 +2404,145 @@ iframe {
 
 .a600 {
   text-align: center; }
+
+.box-tag .box-caption {
+  margin-bottom: -5px; }
+
+.box-tag .tag-icon {
+  background: url("../images/icon_tag.png") no-repeat center center;
+  width: 20px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+  top: 9px; }
+
+.tag-item {
+  display: inline-block;
+  line-height: 25px;
+  padding: 0px 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 0px 0px 10px 10px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #7e90a2;
+  -moz-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s; }
+  .tag-item:hover {
+    color: #284664; }
+
+.mostview-item {
+  background-color: #fff;
+  padding: 10px 10px 10px 85px;
+  margin: 10px 0px 0px 0px;
+  border-radius: 3px; }
+  .mostview-item img {
+    width: 65px;
+    height: 65px;
+    float: left;
+    margin: 2px 0px 0px -75px; }
+  .mostview-item h3 {
+    margin: -5px 0px 0px 0px;
+    padding: 0px;
+    line-height: 0.9; }
+    .mostview-item h3 a {
+      font-size: 13px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      color: #284664; }
+  .mostview-item p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+    margin: 3px 0px 0px 0px; }
+  .mostview-item .mi-tag {
+    font-size: 12px;
+    font-weight: 800;
+    color: #7e90a2; }
+    .mostview-item .mi-tag em {
+      background: url("../images/icon_tag1.png") no-repeat center center;
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      margin: 0px 4px 0px 0px; }
+  .mostview-item .mi-view {
+    float: right;
+    font-size: 10px;
+    margin: 3px 0px 0px 0px;
+    color: #a0a0a0; }
+    .mostview-item .mi-view em {
+      background: url("../images/icon_view.png") no-repeat center center;
+      width: 16px;
+      height: 12px;
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      margin: 0px 4px 0px 0px; }
+
+.feature-releases {
+  margin: 50px 0px 0px 0px;
+  background-color: #284664;
+  padding: 20px 0px; }
+  .feature-releases .box-caption {
+    margin: 20px 0px 20px 20px; }
+  .feature-releases .box-caption p {
+    color: #fff; }
+  .feature-releases .book-item h3 a {
+    color: #fff; }
+
+.tab-test ul {
+  list-style: none;
+  padding: 0px;
+  margin: -10px 0px 40px 0px; }
+  .tab-test ul li {
+    display: inline-block;
+    border-bottom: 4px solid transparent; }
+    .tab-test ul li a {
+      display: block;
+      padding: 0px 25px;
+      line-height: 40px;
+      opacity: 0.7;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: "Montserrat", sans-serif;
+      color: #284664; }
+      @media screen and (max-width: 767px) {
+        .tab-test ul li a {
+          padding: 0px 3px;
+          font-size: 10px; }
+          .tab-test ul li a span {
+            margin: 0px 0px 0px 0px; } }
+      .tab-test ul li a span.icon-alltest {
+        background: url("../images/icon_alltest.png") no-repeat center center;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin: 0px 4px 0px 0px;
+        position: relative;
+        top: 5px; }
+      .tab-test ul li a span.icon-academic {
+        background: url("../images/icon_academic.png") no-repeat center center;
+        width: 21px;
+        height: 18px;
+        display: inline-block;
+        margin: 0px 4px 0px 0px;
+        position: relative;
+        top: 5px; }
+      .tab-test ul li a span.icon-general-traning {
+        background: url("../images/icon_genral.png") no-repeat center center;
+        width: 18px;
+        height: 20px;
+        display: inline-block;
+        margin: 0px 4px 0px 0px;
+        position: relative;
+        top: 5px; }
+    .tab-test ul li.active {
+      border-bottom: 4px solid #284664; }
+      .tab-test ul li.active a {
+        opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */
