@@ -644,6 +644,9 @@ iframe {
 
 .sitemap {
     padding: 15px 0px 30px;
+    &.bg-gray {
+        padding-left: 20px;
+    }
     a {
         display: inline-block;
         font-size: 13px;
@@ -1105,7 +1108,7 @@ iframe {
 }
 
 .box-caption-margin {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .box-caption {
@@ -1646,6 +1649,22 @@ iframe {
                     margin: 5px 0px 0px 0px;
                 }
             }
+
+            &.brand-writing {
+                .om-icon {
+                    background: url("../images/icon_writing.png") no-repeat center center;
+
+                }
+                p {
+                    font-size: $font-size-xs;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-weight: 700;
+                    color: $orange;
+                    font-family: $font-family-heading;
+                    margin: 5px 0px 0px 0px;
+                }
+            }
         }
         .test-hero {
             width: 50%;
@@ -1729,6 +1748,7 @@ iframe {
                         font-family: $font-family-heading;
                         font-weight: 700;
                         color: $text-color-thrid;
+                        cursor: pointer;
                         @include transition();
                         @media screen and (max-width: 1199px) {
                             padding: 0px 10px;
@@ -1845,7 +1865,7 @@ iframe {
     top: 50px;
     left: 0px;
     right: 0px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         bottom: 90px;
     }
 }
@@ -1883,9 +1903,13 @@ iframe {
         background-color: #d4dae0;
         border-radius: 5px;
         margin: 0px 0px 20px 0px;
+        display: none;
 
         p {
             margin: 0px;
+        }
+        &.show {
+            display: block;
         }
     }
     .sl-caption {
@@ -1907,6 +1931,10 @@ iframe {
         }
         .sl-caption-right {
             float: right;
+            @media screen and (max-width: 767px) {
+                float: none;
+                margin: 0px 0px 10px 0px;
+            }
             em {
                 display: inline-block;
                 line-height: 30px;
@@ -1924,6 +1952,8 @@ iframe {
                 border-radius: 3px;
                 margin: 0px 0px 0px 10px;
                 color: $active-color;
+                cursor: pointer;
+
                 &.active {
                     color: #fff;
                     background-color: $active-color;
@@ -2006,7 +2036,7 @@ iframe {
                 line-height: 25px;
                 border-radius: 3px;
                 padding: 0px 10px;
-                margin: 0px 0px 0px 5px;
+                margin: 0px 0px 5px 5px;
                 @include transition();
                 border: 1px solid $green;
                 font-size: 10px;
@@ -2073,6 +2103,28 @@ iframe {
             margin: 0px 3px 0px 0px;
             background-repeat: no-repeat;
         }
+    }
+
+    &.orange {
+
+        .sl-caption span {
+            color: $orange;
+        }
+        .sl-item span.number {
+            background-color: $orange;
+        }
+        .sl-item .sl-control a {
+            color: $orange;
+            border: 1px solid $orange;
+            &:hover {
+                background-color: $orange;
+                color: #fff;
+            }
+        }
+        .sl-caption h2 {
+            color: #bb7f44;
+        }
+
     }
 }
 
@@ -2276,7 +2328,7 @@ iframe {
     padding: 15px;
     height: 140px;
     background-color: $active-color;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         height: 100px;
         padding: 10px 10px;
     }
@@ -2294,7 +2346,9 @@ iframe {
             font-weight: 300;
             color: #fff;
         }
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
+            float: left;
+            margin: 5px 0px 0px 0px;
             .icon-time {
                 display: none;
             }
@@ -2309,7 +2363,7 @@ iframe {
         max-width: 240px;
         margin-top: -10px;
         margin-left: 20px;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
             margin-top: -5px;
             margin-left: 10px;
             max-width: 210px;
@@ -2336,7 +2390,7 @@ iframe {
             &:hover {
                 background-color: rgba(255, 255, 255, 1);
             }
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 991px) {
                 font-size: 12px;
                 height: 37px;
                 margin: 5px 0px 0px 5px;
@@ -2372,7 +2426,7 @@ iframe {
         max-width: 750px;
         position: relative;
         height: 110px;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
             position: absolute;
             bottom: 100px;
             left: 0px;
@@ -2382,27 +2436,28 @@ iframe {
             z-index: 9;
             padding: 10px;
             display: none;
-            height: 280px;
+            height: 230px;
             &.show {
                 display: block;
             }
         }
+
+
         .qp-items {
             height: 90px;
             overflow: auto;
-            @media screen and (max-width: 767px) {
-                height: 200px;
+            @media screen and (max-width: 991px) {
+                height: 150px;
             }
+
         }
         @media screen and (max-width: 1199px) {
             max-width: 600px;
         }
         @media screen and (max-width: 991px) {
-            max-width: 400px;
+            max-width: 1000px;
         }
-        @media screen and (max-width: 767px) {
-            max-width: 900px;
-        }
+        @media screen and (max-width: 767px) {}
         .qp-caption {
             span {
                 display: inline-block;
@@ -2440,7 +2495,7 @@ iframe {
             position: absolute;
             top: 0px;
             right: 20px;
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 991px) {
                 position: relative;
                 top: auto;
                 right: auto;
@@ -2509,10 +2564,8 @@ iframe {
 .listening-page {
     padding: 50px 390px 0px 0px;
     position: relative;
-    @media screen and (max-width: 1199px) {
-        padding: 50px 300px 0px 0px;
-    }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {}
+    @media screen and (max-width: 991px) {
         padding: 50px 0px 0px 0px;
     }
     .player-listening {
@@ -2521,14 +2574,19 @@ iframe {
         position: fixed;
         z-index: 99;
         top: 50px;
-        left: 0px;
-        right: 390px;
+        width: 100%;
+        max-width: 690px;
 
         @media screen and (max-width: 1199px) {
-            right: 300px;
+
+            max-width: 520px;
         }
-        @media screen and (max-width: 767px) {
+
+        @media screen and (max-width: 1199px) {}
+        @media screen and (max-width: 991px) {
+            left: 0px;
             right: 0px;
+            max-width: 1000px;
         }
         .player {
             position: relative;
@@ -2541,13 +2599,12 @@ iframe {
         float: left;
         width: 100%;
         min-height: 600px;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
             float: none;
         }
 
         .split-left {
             margin: 0px auto;
-            max-width: 725px;
             padding-top: 70px;
         }
         .box-ad728 {
@@ -2557,7 +2614,9 @@ iframe {
     }
 
     .end-the-test {
-
+        @media screen and (max-width: 991px) {
+            padding-bottom: 120px;
+        }
         text-align: center;
         h3 {
             font-size: 20px;
@@ -2623,20 +2682,24 @@ iframe {
         padding: 30px;
 
         float: right;
-        @media screen and (max-width: 1199px) {
-            width: 300px;
-
-            padding: 15px;
-        }
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1199px) {}
+        @media screen and (max-width: 991px) {
             margin: 0px;
             float: none;
             width: 100%;
-            padding: 0px;
-            position: relative;
+            padding: 10px;
+            position: fixed;
             top: unset;
-            right: unset;
-            bottom: unset;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            z-index: 99;
+
+
+            #qp-afix {
+                position: relative !important;
+                top: unset !important;
+            }
         }
 
         .box-ads {
@@ -2689,6 +2752,40 @@ iframe {
             }
         }
 
+    }
+
+    .lp-right-writing {
+
+        width: 390px;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        bottom: 0px;
+        background-color: $box-color;
+        padding: 30px;
+        float: right;
+        @media screen and (max-width: 1199px) {}
+        @media screen and (max-width: 991px) {
+            margin: 0px;
+            float: none;
+            width: 100%;
+            padding: 10px;
+
+            top: unset;
+            right: unset;
+            bottom: unset;
+            left: unset;
+            z-index: 99;
+
+
+
+        }
+
+        .box-ads {
+            margin-bottom: 30px;
+            margin: 0px auto 30px auto;
+            text-align: center;
+        }
     }
 
 
@@ -2847,6 +2944,20 @@ iframe {
     &:hover {
         color: $active-color;
     }
+    &.tag-item-bg {
+        background-color: $box-color;
+    }
+
+    .close-tag {
+        background: url("../images/icon_close.png") no-repeat center center;
+
+        width: 8px;
+        height: 8px;
+        position: relative;
+        display: inline-block;
+        margin: 0px -5px 0px 5px;
+        top: 0px;
+    }
 }
 
 .mostview-item {
@@ -2875,7 +2986,7 @@ iframe {
     p {
         font-size: $font-size-xs;
         margin: 0px;
-        line-height: 1.2;
+
         margin: 3px 0px 0px 0px;
 
     }
@@ -2891,6 +3002,9 @@ iframe {
             position: relative;
             top: 2px;
             margin: 0px 4px 0px 0px;
+        }
+        &:hover {
+            color: $active-color;
         }
 
     }
@@ -2996,6 +3110,315 @@ iframe {
 
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+
+    .affix {
+        position: fixed !important;
+        width: 330px;
+        top: 70px;
+
+    }
+}
+
+
+.text-big {
+    .split-left {
+        font-size: 20px;
+    }
+}
+
+
+/**********tips-page***/
+
+.colleft-inner {
+    padding: 0px 20px 0px 0px;
+    @media screen and (max-width: 991px) {
+        padding: 0px;
+    }
+}
+
+.searchbox {
+    width: 100%;
+    height: 30px;
+    border: 1px solid $active-color;
+    border-radius: 3px;
+    position: relative;
+    padding: 0px 0px 0px 30px;
+
+    button {
+        background: url("../images/icon_search.png") no-repeat center center;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+    input {
+        height: 28px;
+        width: 100%;
+        display: block;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        text-align: center;
+        font-size: 12px;
+        padding: 0px 10px;
+        color: $text-color-for;
+    }
+    &.searchbox-fix {
+        border: none;
+        input {
+            border: 1px solid $active-color;
+            border-radius: 3px;
+            height: 30px;
+        }
+        button {
+            margin: 0px 0px 0px -10px;
+        }
+    }
+}
+
+.tip-article {
+    margin: 70px 0px 0px 0px;
+    @media screen and (max-width: 991px) {
+        margin: 30px 0px 0px 0px;
+
+    }
+    &.tip-article-detail {
+        margin: 0px;
+        @media screen and (max-width: 991px) {
+            margin: 0px 0px 0px 0px;
+
+        }
+    }
+    &.tip-article {
+        margin: 30px 0px 0px 0px;
+    }
+    h3 {
+
+        a {
+            font-weight: 700;
+            color: $active-color;
+        }
+    }
+}
+
+.ta-meta {
+
+    .box-tag {
+        float: left;
+
+
+
+    }
+    .test-des {
+        float: right;
+        p {
+            display: inline-block;
+            margin: 0px 0px 0px 10px;
+        }
+    }
+    .ta-date {
+        float: right;
+        line-height: 25px;
+        font-size: 12px;
+        color: $active-color;
+    }
+}
+
+.ta-content {}
+
+.news-item {
+
+    background-color: #fff;
+    padding: 15px 15px 15px 190px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 3px;
+    border: 1px solid $box-color;
+    min-height: 150px;
+
+
+    img {
+        width: 160px;
+        height: 120px;
+        float: left;
+        margin: 0px 0px 0px -175px;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 10px 10px 10px 100px;
+
+        min-height: 50px;
+        img {
+
+            float: left;
+            margin: 0px 0px 0px -90px;
+            width: 80px;
+            height: auto;
+        }
+
+    }
+
+    h3 {
+
+        margin: -2px 0px 0px 0px;
+        padding: 0px;
+        line-height: 1.3;
+        a {
+            font-size: 16px;
+            font-family: $font-family-heading;
+            font-weight: 800;
+            color: $active-color;
+            @media screen and (max-width: 991px) {
+
+                font-size: 12px;
+                display: block;
+                margin: 0px 0px 5px 0px;
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    p {
+        font-size: $font-size-sm;
+        margin: 0px;
+
+        margin: 3px 0px 0px 0px;
+        @media screen and (max-width: 991px) {
+            display: none;
+
+        }
+
+    }
+    .mi-tag {
+        font-size: $font-size-xs;
+        font-weight: 800;
+        color: $text-color-thrid;
+        em {
+            background: url("../images/icon_tag1.png") no-repeat center center;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            margin: 0px 4px 0px 0px;
+        }
+        &:hover {
+            color: $active-color;
+        }
+
+    }
+    .test-des {
+        float: right;
+        p {
+            display: inline-block;
+            margin: 0px 0px 0px 10px;
+            font-size: 12px;
+
+        }
+    }
+}
+
+
+.feature-tip {
+
+    margin: 70px -20px 0px 0px;
+    padding: 50px 30px 80px 30px;
+    position: relative;
+
+    background-color: $active-color;
+
+    .owl-dots {
+        position: absolute;
+        bottom: -40px;
+        left: 0px;
+        text-align: center;
+        right: 0px;
+
+        .owl-dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin: 0px 6px;
+            background-color: #fff;
+            opacity: 0.7;
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        margin: 30px 0px 0px 0px 0px;
+        padding: 40px 10px 60px 10px;
+
+    }
+    .box-caption {
+        margin-bottom: 0px;
+    }
+    .box-caption p {
+        color: #fff;
+    }
+
+}
+
+.owl-tip {
+
+    img {
+        width: 160px !important;
+        height: 120px;
+        @media screen and (max-width: 991px) {
+            width: 80px !important;
+            height: auto;
+
+        }
+
+    }
+}
+
+.news-item-wrap {
+    padding: 0px 20px;
+
+    @media screen and (max-width: 991px) {
+        padding: 0px;
+
+    }
+}
+
+
+.bg-gray {
+    background-color: $box-color;
+}
+
+.tip-search {
+    background-color: $box-color;
+    padding: 0px 20px 20px 20px;
+    @media screen and (max-width: 991px) {
+        padding: 0 5px;
+
+    }
+    .box-tag {
+        margin: 20px 0px;
+    }
+    .test-des {
+        float: right;
+
+
+
+        p {
+
+            display: inline-block;
+            margin: 0px 0px 0px 10px;
         }
     }
 }

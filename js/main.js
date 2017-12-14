@@ -86,6 +86,7 @@
 
             } else {
                 $('.question-panel').addClass("show");
+                $('.qp-items').getNiceScroll().resize();
 
             }
 
@@ -102,44 +103,97 @@
             }
         });
 
+        if ($('.api').length) {
+            $(window).bind('resize', function () {
+                var width = window.innerWidth;
+                var check = false;
+                if (width <= 768) {
+                    check = true;
 
-        $(window).bind('resize', function () {
-            var width = window.innerWidth;
-            var check = false;
-            if (width <= 768) {
-                check = true;
+                } else {
+                    check = false;
+
+                }
+                if (check) {
+                    split.destroy();
+                    split = Split(['#slpit-one', '#slpit-two'], {
+                        sizes: [50, 50],
+                        minSize: 20,
+                        direction: 'vertical',
+                        onDrag: function () {
+                            $(".split-item").getNiceScroll().resize();
+                        },
+                    });
+
+                } else {
+                    split.destroy();
+                    split = Split(['#slpit-one', '#slpit-two'], {
+                        sizes: [50, 50],
+                        minSize: 20,
+                        onDrag: function () {
+                            $(".split-item").getNiceScroll().resize();
+                        },
+                    });
+
+                }
+            }).trigger('resize');
+
+        }
+
+
+
+
+        //listing page
+
+        $('#qp-afix').affix({
+            offset: {
+                top: 290,
+                bottom: function () {
+                    return (this.bottom = $('.footer').outerHeight(true) + 100)
+                }
+            }
+        })
+
+        //show-nodepad
+        $('.btn-show-note').click(function () {
+
+            var id = $(this).attr("data-id");
+            if ($(id).is(":visible")) {
+                $(id).removeClass("show");
+                $(this).removeClass("active");
+                $(this).html(" <strong></strong> Show Notepad");
 
             } else {
-                check = false;
 
+                $(id).addClass("show");
+                $(this).addClass("active");
+                $(this).html(" <strong></strong> Hide Notepad");
             }
-            if (check) {
-                split.destroy();
-                split = Split(['#slpit-one', '#slpit-two'], {
-                    sizes: [50, 50],
-                    minSize: 20,
-                    direction: 'vertical',
-                    onDrag: function () {
-                        $(".split-item").getNiceScroll().resize();
-                    },
-                });
-
-            } else {
-                split.destroy();
-                split = Split(['#slpit-one', '#slpit-two'], {
-                    sizes: [50, 50],
-                    minSize: 20,
-                    onDrag: function () {
-                        $(".split-item").getNiceScroll().resize();
-                    },
-                });
-
-            }
-        }).trigger('resize');
 
 
+        });
+
+        //text-size
+        $('.btn-textsize').click(function () {
+            $('body').addClass("text-big");
+
+        });
 
 
+        //tips page
+
+
+        var owl_tip = $('.owl-tip')
+        $(owl_tip).owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 8000,
+            items: 1
+
+
+        });
 
 
         /** Back To Top**/
