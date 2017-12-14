@@ -2825,4 +2825,132 @@ iframe {
       display: inline-block;
       margin: 0px 0px 0px 10px; }
 
+.page-caption {
+  font-weight: 700;
+  color: #284664;
+  font-size: 20px;
+  margin: 0px 0px 0px 0px;
+  padding: 50px 0px 20px 0px; }
+
+.analytic-bar {
+  margin: 0px 0px 20px 0px;
+  min-height: 30px; }
+  .analytic-bar .ab-right {
+    float: right; }
+    .analytic-bar .ab-right a {
+      float: left;
+      margin: 0px 0px 5px 10px;
+      padding: 0px 10px;
+      line-height: 25px;
+      border: 1px solid #284664;
+      color: #284664;
+      font-size: 12px;
+      border-radius: 3px; }
+      .analytic-bar .ab-right a.active {
+        border: 1px solid #d4dae0;
+        background-color: #d4dae0; }
+
+.date-analytics {
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+  @media screen and (max-width: 991px) {
+    .date-analytics {
+      position: relative;
+      top: unset;
+      left: unset; } }
+
+.da-item {
+  display: inline-block;
+  margin: 0px 20px 10px 0px; }
+  @media screen and (max-width: 767px) {
+    .da-item {
+      margin: 0px 10px 10px 0px; } }
+  .da-item span {
+    display: inline-block;
+    line-height: 25px;
+    margin: 0px 5px 0px 0px;
+    font-size: 13px;
+    font-weight: 800;
+    color: #7e90a2; }
+  .da-item .da-wrap {
+    display: inline-block;
+    position: relative; }
+    .da-item .da-wrap input {
+      line-height: 25px;
+      border: 1px solid #284664;
+      color: #284664;
+      font-size: 12px;
+      border-radius: 3px;
+      width: 110px;
+      padding: 0px 5px 0px 32px;
+      outline: none;
+      background-color: transparent;
+      position: relative;
+      z-index: 2; }
+    .da-item .da-wrap em {
+      background: url("../images/icon_calendar1.png") no-repeat center center;
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 6px;
+      top: 3px;
+      z-index: 1; }
+
+.analytic-box {
+  position: relative; }
+
+.chart-draw {
+  margin-bottom: 20px; }
+
+.analytic-score {
+  margin: 50px 0px 0px 0px; }
+  .analytic-score .as-col {
+    width: 20%;
+    text-align: center;
+    float: left;
+    margin: 0px 0px 20px 0px; }
+    @media screen and (max-width: 1199px) {
+      .analytic-score .as-col {
+        width: 33.333%; } }
+    @media screen and (max-width: 767px) {
+      .analytic-score .as-col {
+        width: 50%; } }
+    @media screen and (max-width: 480px) {
+      .analytic-score .as-col {
+        width: 100%;
+        float: none; } }
+    .analytic-score .as-col span {
+      display: block;
+      text-align: center;
+      line-height: 25px;
+      margin: 0px 5px 0px 0px;
+      font-size: 13px;
+      font-weight: 800;
+      color: #7e90a2; }
+    .analytic-score .as-col p {
+      line-height: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 10px 0px;
+      font-family: "Montserrat", sans-serif;
+      color: #284664; }
+      .analytic-score .as-col p em {
+        display: inline-block;
+        background: url("../images/icon_alltest.png") no-repeat center center;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        margin: 0px 4px 0px 0px;
+        top: 4px; }
+        .analytic-score .as-col p em.icon-chart {
+          background: url("../images/icon_chart.png") no-repeat center center; }
+        .analytic-score .as-col p em.icon-target {
+          background: url("../images/icon_target.png") no-repeat center center; }
+        .analytic-score .as-col p em.icon-time {
+          background: url("../images/icon_time2.png") no-repeat center center; }
+        .analytic-score .as-col p em.icon-cup {
+          background: url("../images/icon_cup.png") no-repeat center center; }
+
 /*# sourceMappingURL=main.css.map */

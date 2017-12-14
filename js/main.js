@@ -195,6 +195,14 @@
 
         });
 
+        //analytics page
+
+        $(function () {
+            $('.datetimepicker').datetimepicker({
+                format: 'DD/MM/YYYY'
+            });
+        });
+
 
         /** Back To Top**/
         var win = $(window);
