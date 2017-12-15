@@ -203,22 +203,65 @@
             });
         });
 
+        //show-performance
+        $('.btn-show-performance').click(function () {
 
-        /** Back To Top**/
-        var win = $(window);
-        var totop = $('.totop');
-        win.on('scroll', function () {
-            if ($(this).scrollTop() >= 300) {
-                $(totop).addClass("show");
+
+            if ($(this).parents(".item-score").hasClass("show-performance")) {
+                $(this).parents(".item-score").removeClass("show-performance")
+                $(this).removeClass("active");
+
             } else {
-                $(totop).removeClass("show");
+
+                $(this).parents(".item-score").addClass("show-performance")
+                $(this).addClass("active");
             }
+
+
         });
-        $(totop).on('click', function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 1500);
+        //homepage
+
+        var owl_say = $('.owl-say')
+        $(owl_say).owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 8000,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                768: {
+                    items: 2,
+
+                },
+                1000: {
+                    items: 3,
+
+                }
+            }
+
+
         });
+
+
+        var owl_look = $('.owl-look')
+        $(owl_look).owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            autoplay: true,
+
+            items: 1
+
+
+        });
+
+
+
+
 
 
     });
