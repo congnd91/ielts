@@ -159,13 +159,13 @@
 
             var id = $(this).attr("data-id");
             if ($(id).is(":visible")) {
-                $(id).removeClass("show");
+                $(id).slideUp();
                 $(this).removeClass("active");
                 $(this).html(" <strong></strong> Show Notepad");
 
             } else {
 
-                $(id).addClass("show");
+                $(id).slideDown();
                 $(this).addClass("active");
                 $(this).html(" <strong></strong> Hide Notepad");
             }
@@ -246,21 +246,18 @@
 
         });
 
-
-        var owl_look = $('.owl-look')
-        $(owl_look).owlCarousel({
-            loop: true,
-            margin: 0,
-            nav: false,
-            autoplay: true,
-
-            items: 1
-
-
+        $('.carousel').carousel({
+            directionNav: false,
+            buttonNav: 'bullets',
+            slidesPerScroll: 5,
+            top: 10,
+            hMargin: 0.1,
+            frontWidth: 500,
+            autoplayInterval: 3000,
+            description: true,
+            pauseOnHover: false,
+            descriptionContainer: '.description'
         });
-
-
-
 
 
 

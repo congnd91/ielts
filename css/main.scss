@@ -4268,7 +4268,16 @@ iframe {
 .section-look {
     background-color: $active-color;
     margin-top: 70px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
+    .carousel {
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        @media screen and (max-width: 991px) {
+            padding-top: 0px;
+            padding-bottom: 20px;
+        }
+    }
 }
 
 .owl-look {
@@ -4346,5 +4355,85 @@ iframe {
             opacity: 0.9;
             cursor: pointer;
         }
+    }
+}
+
+
+.buttonNav {
+    position: absolute !important;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    width: 100% !important;
+    height: 30px !important;
+    .bullet {
+        display: inline-block !important;
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50%;
+        margin: 0px 6px !important;
+        float: none !important;
+        background-image: none !important;
+        background-color: #fff !important;
+        opacity: 0.7;
+        &.bulletActive {
+            opacity: 1;
+            background-image: none !important;
+        }
+    }
+
+}
+
+.slides-home {
+    float: left;
+    width: 75% !important;
+
+
+    @media screen and (max-width: 1199px) {
+        transform: scale(0.8);
+    }
+
+    @media screen and (max-width: 991px) {
+        float: none !important;
+        width: 100% !important;
+
+        transform: translateX(100px) scale(0.8);
+    }
+
+    @media screen and (max-width: 767px) {
+        float: none !important;
+        width: 100% !important;
+
+        transform: translateX(170px) scale(0.6);
+        height: 280px !important;
+    }
+    @media screen and (max-width: 480px) {
+        float: none !important;
+        width: 100% !important;
+
+        transform: translateX(120px) scale(0.4);
+        height: 200px !important;
+    }
+    img {
+
+        height: auto !important;
+    }
+
+}
+
+.description-home {
+    float: right;
+    text-align: left;
+    width: 25%;
+    position: relative;
+    margin: 100px 0px 0px 0px;
+    min-height: 100px;
+    color: #fff;
+    @media screen and (max-width: 991px) {
+        float: none;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
     }
 }
