@@ -1372,13 +1372,16 @@ iframe {
         width: 44px;
         height: 44px;
         margin: 0px auto;
+        display: block;
     }
-    p {
+    p,
+    strong {
         font-size: $font-size-xs;
         text-transform: uppercase;
         letter-spacing: 3px;
         font-weight: 700;
         color: $green;
+        display: block;
         font-family: $font-family-heading;
         margin: 15px 0px 30px 0px;
     }
@@ -1424,7 +1427,8 @@ iframe {
         .om-icon {
             background: url("../images/icon_writing.png") no-repeat center center;
         }
-        p {
+        p,
+        strong {
             color: $orange;
         }
         .om-btn {
@@ -1435,7 +1439,8 @@ iframe {
         .om-icon {
             background: url("../images/icon_speaking.png") no-repeat center center;
         }
-        p {
+        p,
+        strong {
             color: $pink;
         }
         .om-btn {
@@ -1446,7 +1451,8 @@ iframe {
         .om-icon {
             background: url("../images/icon_listen.png") no-repeat center center;
         }
-        p {
+        p,
+        strong {
             color: $active-color-second
         }
         .om-btn {
@@ -1624,8 +1630,10 @@ iframe {
                 width: 44px;
                 height: 44px;
                 margin: 0px auto;
+                display: block;
             }
-            p {
+            p,
+            strong {
                 font-size: $font-size-xs;
                 text-transform: uppercase;
                 letter-spacing: 3px;
@@ -1639,7 +1647,8 @@ iframe {
                     background: url("../images/icon_listen.png") no-repeat center center;
 
                 }
-                p {
+                p,
+                strong {
                     font-size: $font-size-xs;
                     text-transform: uppercase;
                     letter-spacing: 3px;
@@ -1655,7 +1664,8 @@ iframe {
                     background: url("../images/icon_writing.png") no-repeat center center;
 
                 }
-                p {
+                p,
+                strong {
                     font-size: $font-size-xs;
                     text-transform: uppercase;
                     letter-spacing: 3px;

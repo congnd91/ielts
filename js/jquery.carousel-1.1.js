@@ -1022,7 +1022,7 @@ Version: 1.1
         bottom: 0,
         backZoom: 0.8,
         slidesPerScroll: 5,
-        speed: 500,
+        speed: 400,
         buttonNav: 'none',
         directionNav: false,
         autoplay: true,

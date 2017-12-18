@@ -11,6 +11,10 @@
 
         });
 
+        //mathHeight
+
+        $('.book-item').matchHeight();
+
         $('.nav-icon').click(function () {
             $(this).toggleClass('open');
             $('body').toggleClass("open-menu");
@@ -219,6 +223,7 @@
 
 
         });
+
         //homepage
 
         var owl_say = $('.owl-say')

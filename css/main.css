@@ -1226,13 +1226,16 @@ iframe {
     background: url("../images/icon_reading.png") no-repeat center center;
     width: 44px;
     height: 44px;
-    margin: 0px auto; }
-  .om-item p {
+    margin: 0px auto;
+    display: block; }
+  .om-item p,
+  .om-item strong {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700;
     color: #327846;
+    display: block;
     font-family: "Montserrat", sans-serif;
     margin: 15px 0px 30px 0px; }
   .om-item .om-btn {
@@ -1273,19 +1276,22 @@ iframe {
         margin: 0px 5px 0px; }
   .om-item.orange .om-icon {
     background: url("../images/icon_writing.png") no-repeat center center; }
-  .om-item.orange p {
+  .om-item.orange p,
+  .om-item.orange strong {
     color: #f9a95a; }
   .om-item.orange .om-btn {
     background-color: #f9a95a; }
   .om-item.pink .om-icon {
     background: url("../images/icon_speaking.png") no-repeat center center; }
-  .om-item.pink p {
+  .om-item.pink p,
+  .om-item.pink strong {
     color: #c76478; }
   .om-item.pink .om-btn {
     background-color: #c76478; }
   .om-item.cyan .om-icon {
     background: url("../images/icon_listen.png") no-repeat center center; }
-  .om-item.cyan p {
+  .om-item.cyan p,
+  .om-item.cyan strong {
     color: #32b3c7; }
   .om-item.cyan .om-btn {
     background-color: #32b3c7; }
@@ -1437,8 +1443,10 @@ iframe {
         background: url("../images/icon_reading.png") no-repeat center center;
         width: 44px;
         height: 44px;
-        margin: 0px auto; }
-      .reading-header .rh-top .brand-reading p {
+        margin: 0px auto;
+        display: block; }
+      .reading-header .rh-top .brand-reading p,
+      .reading-header .rh-top .brand-reading strong {
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -1448,7 +1456,8 @@ iframe {
         margin: 5px 0px 0px 0px; }
       .reading-header .rh-top .brand-reading.brand-listening .om-icon {
         background: url("../images/icon_listen.png") no-repeat center center; }
-      .reading-header .rh-top .brand-reading.brand-listening p {
+      .reading-header .rh-top .brand-reading.brand-listening p,
+      .reading-header .rh-top .brand-reading.brand-listening strong {
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -1458,7 +1467,8 @@ iframe {
         margin: 5px 0px 0px 0px; }
       .reading-header .rh-top .brand-reading.brand-writing .om-icon {
         background: url("../images/icon_writing.png") no-repeat center center; }
-      .reading-header .rh-top .brand-reading.brand-writing p {
+      .reading-header .rh-top .brand-reading.brand-writing p,
+      .reading-header .rh-top .brand-reading.brand-writing strong {
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 3px;
