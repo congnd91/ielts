@@ -1675,6 +1675,23 @@ iframe {
                     margin: 5px 0px 0px 0px;
                 }
             }
+
+            &.brand-speaking {
+                .om-icon {
+                    background: url("../images/icon_speaking.png") no-repeat center center;
+
+                }
+                p,
+                strong {
+                    font-size: $font-size-xs;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-weight: 700;
+                    color: $pink;
+                    font-family: $font-family-heading;
+                    margin: 5px 0px 0px 0px;
+                }
+            }
         }
         .test-hero {
             width: 50%;
@@ -2133,6 +2150,28 @@ iframe {
         }
         .sl-caption h2 {
             color: #bb7f44;
+        }
+
+    }
+
+    &.pink {
+
+        .sl-caption span {
+            color: $pink;
+        }
+        .sl-item span.number {
+            background-color: $pink;
+        }
+        .sl-item .sl-control a {
+            color: $pink;
+            border: 1px solid $pink;
+            &:hover {
+                background-color: $pink;
+                color: #fff;
+            }
+        }
+        .sl-caption h2 {
+            color: $pink;
         }
 
     }

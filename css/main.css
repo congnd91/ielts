@@ -1476,6 +1476,17 @@ iframe {
         color: #f9a95a;
         font-family: "Montserrat", sans-serif;
         margin: 5px 0px 0px 0px; }
+      .reading-header .rh-top .brand-reading.brand-speaking .om-icon {
+        background: url("../images/icon_speaking.png") no-repeat center center; }
+      .reading-header .rh-top .brand-reading.brand-speaking p,
+      .reading-header .rh-top .brand-reading.brand-speaking strong {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 700;
+        color: #c76478;
+        font-family: "Montserrat", sans-serif;
+        margin: 5px 0px 0px 0px; }
     .reading-header .rh-top .test-hero {
       width: 50%;
       position: relative;
@@ -1843,6 +1854,18 @@ iframe {
       color: #fff; }
   .split-left.orange .sl-caption h2 {
     color: #bb7f44; }
+  .split-left.pink .sl-caption span {
+    color: #c76478; }
+  .split-left.pink .sl-item span.number {
+    background-color: #c76478; }
+  .split-left.pink .sl-item .sl-control a {
+    color: #c76478;
+    border: 1px solid #c76478; }
+    .split-left.pink .sl-item .sl-control a:hover {
+      background-color: #c76478;
+      color: #fff; }
+  .split-left.pink .sl-caption h2 {
+    color: #c76478; }
 
 .split-right {
   background-color: #84ae90;
