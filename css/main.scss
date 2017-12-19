@@ -3760,6 +3760,16 @@ iframe {
 .item-score {
     margin: 40px 0px 0px 0px;
     border-top: 1px solid $icon-bg;
+
+    .box-performance {
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 992px) {
+            display: block !important;
+        }
+    }
 }
 
 .ic-top {
@@ -3787,14 +3797,17 @@ iframe {
     .ic-icon {
         float: left;
         text-align: center;
-        div {
+        div,
+        span {
 
             background: url("../images/icon_listen.png") no-repeat center center;
             width: 50px;
             height: 50px;
             margin: 0px auto;
+            display: block;
         }
-        p {
+        p,
+        strong {
             color: $active-color-second;
             font-weight: 700;
             font-size: 12px;
@@ -3804,34 +3817,40 @@ iframe {
             text-transform: uppercase;
         }
         &.reading {
-            div {
+            div,
+            span {
 
                 background: url("../images/icon_reading.png") no-repeat center center;
 
             }
-            p {
+            p,
+            strong {
                 color: $green;
 
             }
         }
         &.writing {
-            div {
+            div,
+            span {
 
                 background: url("../images/icon_writing.png") no-repeat center center;
 
             }
-            p {
+            p,
+            strong {
                 color: $orange;
 
             }
         }
         &.speaking {
-            div {
+            div,
+            span {
 
                 background: url("../images/icon_speaking.png") no-repeat center center;
 
             }
-            p {
+            p,
+            strong {
                 color: $pink;
 
             }

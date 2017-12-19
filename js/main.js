@@ -211,13 +211,13 @@
         $('.btn-show-performance').click(function () {
 
 
-            if ($(this).parents(".item-score").hasClass("show-performance")) {
-                $(this).parents(".item-score").removeClass("show-performance")
+            if ($(this).parents(".item-score").find(".box-performance").is(":visible")) {
+                $(this).parents(".item-score").find(".box-performance").slideUp();
                 $(this).removeClass("active");
 
             } else {
 
-                $(this).parents(".item-score").addClass("show-performance")
+                $(this).parents(".item-score").find(".box-performance").slideDown();
                 $(this).addClass("active");
             }
 
