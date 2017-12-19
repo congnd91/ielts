@@ -11,8 +11,8 @@
 
         });
 
-        //mathHeight
 
+        //mathHeight
         $('.book-item').matchHeight();
 
         $('.nav-icon').click(function () {
@@ -200,12 +200,13 @@
         });
 
         //analytics page
-
-        $(function () {
-            $('.datetimepicker').datetimepicker({
-                format: 'DD/MM/YYYY'
+        if ($('.datetimepicker').length) {
+            $(function () {
+                $('.datetimepicker').datetimepicker({
+                    format: 'DD/MM/YYYY'
+                });
             });
-        });
+        }
 
         //show-performance
         $('.btn-show-performance').click(function () {
@@ -264,6 +265,30 @@
             descriptionContainer: '.description'
         });
 
+
+        //set progesss
+        var setProcess = function (id, number) {
+
+            $(id).removeClass(function (index, className) {
+                return (className.match(/(^|\s)progress-\S+/g) || []).join(' ');
+            });
+            var newClass = "progress-" + number;
+            $(id).addClass(newClass);
+
+        };
+        setProcess("#progress-small", 75);
+        setProcess("#progress-big", 40);
+
+
+        //show-re
+        $('.btn-show-re').click(function () {
+            $('body').addClass("show-review-explanation");
+            $(".split-item").getNiceScroll().resize();
+        });
+        //close-re
+        $('.close-rx').click(function () {
+            $('body').removeClass("show-review-explanation");
+        });
 
 
     });

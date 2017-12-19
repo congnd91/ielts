@@ -188,8 +188,16 @@
                         <div class="user-socer">
                             <h2>Your score is:</h2>
                             <div class="row">
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-                                    <div class="progress-radial progress-75">
+                                <div class="col-md-4 col-sm-4 col-sm-push-4 col-xs-12">
+                                    <div class="welldone">
+                                        <div class="wd-round">
+                                            <strong>6.5</strong>
+                                        </div>
+                                        <p>Well done !</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-sm-pull-4 col-xs-12">
+                                    <div class="radial progress-75 small" id="progress-small">
                                         <div class="overlay">
                                             <span class="pr-icon-true">
                                             </span>
@@ -200,15 +208,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-4 col-xs-12">
-                                    <div class="welldone">
-                                        <div class="wd-round">
-                                            <strong>6.5</strong>
-                                        </div>
-                                        <p>Well done !</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-                                    <div class="progress-radial progress-75 big">
+                                    <div class="radial progress-75 big" id="progress-big">
                                         <div class="overlay">
                                             <span class="pr-icon-time">
                                             </span>
@@ -382,7 +382,7 @@
                         <div class="reviews-test-mobile">
                             <div class="icon-review">
                             </div>
-                            <a href="#"><span></span> Enter Review & Explanations </a>
+                            <a class="btn-show-re"><span></span> Enter Review & Explanations </a>
                         </div>
                     </div>
                     <div class="box-caption">
@@ -488,10 +488,14 @@
             </div>
         </div>
         <!--Review & Explanations:-->
-        <section class="review-explanation hidden-sm hidden-xs">
+        <section class="review-explanation ">
             <div class="container">
                 <div class="box-caption box-caption-white">
                     <p><span class="bc-icon icon-review"></span>Review & Explanations: </p>
+                    <div class="close-rx">
+                        <span></span>
+                        <span class="last"></span>
+                    </div>
                 </div>
                 <div class="reading-box-embeb">
                     <div class="reading-box api">
